@@ -1,0 +1,7 @@
+"SourceRoot","Project","DependencyType","Include","Version"
+"Kimi_Agent_تحليل نظام EJLive","EJLiveEnterprise/EJLive.Client/EJLive.Client.csproj","PackageReference","Microsoft.Data.Sqlite","8.0.0"
+"Kimi_Agent_تحليل نظام EJLive","EJLiveEnterprise/EJLive.Client/EJLive.Client.csproj","ProjectReference","..\EJLive.Core\EJLive.Core.csproj",""
+"Kimi_Agent_تحليل نظام EJLive","EJLiveEnterprise/EJLive.Core/EJLive.Core.csproj","PackageReference","Microsoft.Data.Sqlite","8.0.0"
+"Kimi_Agent_تحليل نظام EJLive","EJLiveEnterprise/EJLive.Core/EJLive.Core.csproj","PackageReference","System.Drawing.Common","8.0.0"
+"Kimi_Agent_تحليل نظام EJLive","EJLiveEnterprise/EJLive.Installer/EJLive.Installer.csproj","ProjectReference","..\EJLive.Core\EJLive.Core.csproj",""
+"Kimi_Agent_تحليل نظام EJLive","EJLiveEnterprise/EJLive.Server/EJLive.Server.csproj","ProjectReference","..\EJLive.Core\EJLive.Core.csproj",""

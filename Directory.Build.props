@@ -1,0 +1,62 @@
+<Project>
+  <PropertyGroup>
+    <!--
+      The installed .NET SDK/Visual Studio workload resolver can fail silently
+      when project-reference target discovery runs in parallel. Keep builds
+      deterministic for this merged WinForms solution.
+    -->
+    <BuildInParallel>false</BuildInParallel>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+
+  <!--
+    Nullable warning gate rollout (CI/Release only).
+    Phase 1: Foundation libraries + verification.
+    Phase 2: Service/monitor/installer projects.
+    Phase 3: Interactive WinForms surfaces.
+  -->
+  <PropertyGroup>
+    <EnableCiNullableGate Condition="'$(EnableCiNullableGate)' == ''">true</EnableCiNullableGate>
+    <NullableWarningsStage Condition="'$(NullableWarningsStage)' == ''">2</NullableWarningsStage>
+    <NullableWarningGateStage Condition="'$(NullableWarningGateStage)' == ''">99</NullableWarningGateStage>
+    <NullableWarningGateLabel Condition="'$(NullableWarningGateLabel)' == ''">Deferred</NullableWarningGateLabel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="
+      '$(MSBuildProjectName)' == 'EJLive.Shared' Or
+      '$(MSBuildProjectName)' == 'EJLive.Core' Or
+      '$(MSBuildProjectName)' == 'EJLive.Business' Or
+      '$(MSBuildProjectName)' == 'EJLive.Application' Or
+      '$(MSBuildProjectName)' == 'EJLive.LegacyReference' Or
+      '$(MSBuildProjectName)' == 'EJLive.Tests' Or
+      '$(MSBuildProjectName)' == 'EJLive.Verification'">
+    <NullableWarningGateStage>1</NullableWarningGateStage>
+    <NullableWarningGateLabel>Foundation</NullableWarningGateLabel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="
+      '$(MSBuildProjectName)' == 'EJLive.Client.Service' Or
+      '$(MSBuildProjectName)' == 'EJLive.Monitor' Or
+      '$(MSBuildProjectName)' == 'EJLive.Monitoring.WinForms' Or
+      '$(MSBuildProjectName)' == 'EJLive.Installer.WinForms'">
+    <NullableWarningGateStage>2</NullableWarningGateStage>
+    <NullableWarningGateLabel>Operational</NullableWarningGateLabel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="
+      '$(MSBuildProjectName)' == 'EJLive.Client.WinForms' Or
+      '$(MSBuildProjectName)' == 'EJLive.Server.WinForms'">
+    <NullableWarningGateStage>3</NullableWarningGateStage>
+    <NullableWarningGateLabel>Interactive</NullableWarningGateLabel>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <EnableNullableWarningsAsErrors>false</EnableNullableWarningsAsErrors>
+    <EnableNullableWarningsAsErrors Condition="
+        '$(EnableCiNullableGate)' == 'true' And
+        '$(ContinuousIntegrationBuild)' == 'true' And
+        '$(Configuration)' == 'Release' And
+        $([System.Int32]::Parse('$(NullableWarningGateStage)')) &lt;= $([System.Int32]::Parse('$(NullableWarningsStage)'))">true</EnableNullableWarningsAsErrors>
+    <WarningsAsErrors Condition="'$(EnableNullableWarningsAsErrors)' == 'true'">$(WarningsAsErrors);nullable</WarningsAsErrors>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\EJLive.Shared\EJLive.Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>EJLive.Core</AssemblyName>
+    <RootNamespace>EJLive.Core</RootNamespace>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\UnifiedModels.cs" />
+    <Compile Include="Models\JournalArchiveModels.cs" />
+    <Compile Include="Models\VendorRootProfileModels.cs" />
+    <Compile Include="Models\NcrConfigModels.cs" />
+    <Compile Include="Models\NcrConfigurationModels.cs" />
+    <Compile Include="Services\*.cs"
+             Exclude="Services\CoreServices.cs" />
+    <Compile Include="Engine\CommunicationProtocol.cs" />
+    <Compile Include="Engine\JournalOutbox.cs" />
+    <Compile Include="Engine\NetworkEngine.cs" />
+    <Compile Include="Engine\OperationalEngines.cs" />
+    <Compile Include="Xfs\XfsModels.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="App.config" />
+    <None Include="Compatibility\**\*.*"
+          Link="reference-source\Compatibility\%(RecursiveDir)%(Filename)%(Extension)" />
+    <None Include="Models\**\*.*"
+          Exclude="Models\UnifiedModels.cs"
+          Link="reference-source\Models\%(RecursiveDir)%(Filename)%(Extension)" />
+    <None Include="Services\CoreServices.cs"
+          Link="reference-source\Services\CoreServices.cs" />
+    <None Include="Services\**\*.*"
+          Exclude="Services\*.cs"
+          Link="reference-source\Services\%(RecursiveDir)%(Filename)%(Extension)" />
+    <None Include="Engine\**\*.*"
+          Exclude="Engine\CommunicationProtocol.cs;Engine\JournalOutbox.cs;Engine\NetworkEngine.cs;Engine\OperationalEngines.cs"
+          Link="reference-source\Engine\%(RecursiveDir)%(Filename)%(Extension)" />
+    <None Include="Sync\**\*.*"
+          Link="reference-source\Sync\%(RecursiveDir)%(Filename)%(Extension)" />
+    <None Include="Xfs\**\*.*"
+          Exclude="Xfs\XfsModels.cs"
+          Link="reference-source\Xfs\%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>EJLive.Shared</AssemblyName>
+    <RootNamespace>EJLive.Shared</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Logger.cs" />
+    <Compile Remove="LightUiTheme.cs" />
+    <Compile Remove="MonitoringState.cs" />
+    <Compile Remove="MonitoringStateStore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="App.config" />
+    <None Include="Logger.cs" />
+    <None Include="LightUiTheme.cs" />
+    <None Include="MonitoringState.cs" />
+    <None Include="MonitoringStateStore.cs" />
+    <None Include="SecurityHelper.cs.bak" />
+    <None Include="Properties\AssemblyInfo.cs.bak" />
+    <None Include="EJLive.Shared.csproj.bak" />
+  </ItemGroup>
+</Project>

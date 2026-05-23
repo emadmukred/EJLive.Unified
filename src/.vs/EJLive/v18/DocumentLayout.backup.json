@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CodexMarege\\SourceProject\\CodexMarege\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|EJLive.Monitoring.WinForms\\EJLive.Monitoring.WinForms.csproj|c:\\users\\user\\desktop\\codexmarege\\sourceproject\\codexmarege\\ejlive.monitoring.winforms\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|EJLive.Monitoring.WinForms\\EJLive.Monitoring.WinForms.csproj|solutionrelative:ejlive.monitoring.winforms\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|EJLive.Client.WinForms\\EJLive.Client.WinForms.csproj|C:\\Users\\user\\Desktop\\CodexMarege\\SourceProject\\CodexMarege\\ejlive.client.winforms\\clientmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|EJLive.Client.WinForms\\EJLive.Client.WinForms.csproj|solutionrelative:ejlive.client.winforms\\clientmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainDashboardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CodexMarege\\SourceProject\\CodexMarege\\EJLive.Monitoring.WinForms\\MainDashboardForm.cs",
+              "RelativeDocumentMoniker": "EJLive.Monitoring.WinForms\\MainDashboardForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CodexMarege\\SourceProject\\CodexMarege\\EJLive.Monitoring.WinForms\\MainDashboardForm.cs [Design]",
+              "RelativeToolTip": "EJLive.Monitoring.WinForms\\MainDashboardForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T20:31:58.079Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientMainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CodexMarege\\SourceProject\\CodexMarege\\EJLive.Client.WinForms\\ClientMainForm.cs",
+              "RelativeDocumentMoniker": "EJLive.Client.WinForms\\ClientMainForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\New folder (2)\\CodexMarege\\EJLive.Client.WinForms\\ClientMainForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (2)\\CodexMarege\\EJLive.Client.WinForms\\ClientMainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T20:31:37.88Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

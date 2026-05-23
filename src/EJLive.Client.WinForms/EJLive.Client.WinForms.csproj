@@ -1,0 +1,79 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\EJLive.Core\EJLive.Core.csproj" />
+    <ProjectReference Include="..\EJLive.Shared\EJLive.Shared.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>EJLive.Client</AssemblyName>
+    <RootNamespace>EJLive.Client.WinForms</RootNamespace>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="9.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="AppBootstrapper.cs" />
+    <Compile Include="ClientStartupPlanner.cs" />
+    <Compile Include="ClientBackgroundApplicationContext.cs" />
+    <Compile Include="ClientMainForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ClientConstants.cs" />
+    <Compile Include="Services\ServiceRegistry.cs" />
+    <Compile Include="Services\LabelMappingService.cs" />
+    <Compile Include="Services\WindowsRemoteAccessService.cs" />
+    <Compile Include="Services\WindowsPolicyEnforcer.cs" />
+    <Compile Include="Services\WindowsStartupService.cs" />
+    <Compile Include="Services\WindowsServiceRegistrationService.cs" />
+    <Compile Include="Services\UIBinder.cs" />
+    <Compile Include="Services\JournalSyncAgent.cs" />
+    <Compile Include="Services\CashTelemetryService.cs" />
+    <Compile Include="Services\NetworkEngine.cs" />
+    <Compile Include="Services\NetworkManager.cs" />
+    <Compile Include="Services\RuntimeAgentConfigResolver.cs" />
+    <Compile Include="Services\FileDeliveryConfirmationTracker.cs" />
+    <Compile Include="Services\SessionCompanionIpc.cs" />
+    <Compile Include="Services\RemoteCommandHandler.cs" />
+    <Compile Include="Services\JournalProcessor.cs" />
+    <Compile Include="Services\LegacySnippetAdapters.cs" />
+    <Compile Include="Services\AdvancedNetworkManager.cs" />
+    <Compile Include="Services\AdvancedRemoteCommandHandler.cs" />
+    <Compile Include="Services\AdvancedJournalProcessor.cs" />
+    <Compile Include="Supabase\SupabaseModels.cs" />
+    <Compile Include="Supabase\SupabaseSync.cs" />
+    <Compile Include="Agent\BootNotifier.cs" />
+    <Compile Include="Agent\TimeSyncScheduler.cs" />
+    <Compile Include="Agent\LogBackupScheduler.cs" />
+    <Compile Include="Agent\NetworkMonitor.cs" />
+    <Compile Include="Agent\ScreenshotScheduler.cs" />
+    <Compile Include="Agent\AgentBootstrapper.cs" />
+    <Compile Include="Agent\AgentTrayContext.cs" />
+    <Compile Include="Agent\AutoAdminSetup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="app.config" />
+    <None Include="EJLive.Client.WinForms.csproj.user" />
+    <None Include="ClientMainForm.Designer.cs" />
+    <None Include="ClientMainForm.resx" />
+    <None Include="Controls\**\*.*"
+          Link="reference-source\Controls\%(RecursiveDir)%(Filename)%(Extension)" />
+    <None Include="Agent\**\*.*"
+          Exclude="Agent\BootNotifier.cs;Agent\TimeSyncScheduler.cs;Agent\LogBackupScheduler.cs;Agent\NetworkMonitor.cs;Agent\ScreenshotScheduler.cs;Agent\AgentBootstrapper.cs;Agent\AgentTrayContext.cs;Agent\AutoAdminSetup.cs"
+          Link="reference-source\Agent\%(RecursiveDir)%(Filename)%(Extension)" />
+    <None Include="Services\**\*.*"
+          Exclude="Services\WindowsStartupService.cs;Services\WindowsServiceRegistrationService.cs;Services\ServiceRegistry.cs;Services\LabelMappingService.cs;Services\ClientConstants.cs;Services\WindowsRemoteAccessService.cs;Services\WindowsPolicyEnforcer.cs;Services\UIBinder.cs;Services\JournalSyncAgent.cs;Services\CashTelemetryService.cs;Services\NetworkEngine.cs;Services\NetworkManager.cs;Services\RuntimeAgentConfigResolver.cs;Services\FileDeliveryConfirmationTracker.cs;Services\SessionCompanionIpc.cs;Services\RemoteCommandHandler.cs;Services\JournalProcessor.cs;Services\LegacySnippetAdapters.cs;Services\AdvancedNetworkManager.cs;Services\AdvancedRemoteCommandHandler.cs;Services\AdvancedJournalProcessor.cs"
+          Link="reference-source\Services\%(RecursiveDir)%(Filename)%(Extension)" />
+    <None Include="Properties\Resources.*"
+          Link="reference-source\Properties\%(Filename)%(Extension)" />
+    <None Include="Database\supabase_schema.sql"
+          Link="reference-source\Database\supabase_schema.sql" />
+  </ItemGroup>
+</Project>

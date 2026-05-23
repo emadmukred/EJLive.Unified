@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\EJLive.Core\EJLive.Core.csproj" />
+    <ProjectReference Include="..\EJLive.Shared\EJLive.Shared.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>EJLive.Monitoring</AssemblyName>
+    <RootNamespace>EJLive.Monitoring.WinForms</RootNamespace>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="MainDashboardForm.cs" />
+    <Compile Include="Models\DashboardModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="app.config" />
+    <None Include="EJLive.Monitoring.WinForms.csproj.user" />
+    <None Include="MainDashboardForm.Designer.cs"
+          Link="reference-source\Designer\MainDashboardForm.Designer.cs" />
+    <None Include="MainDashboardForm.resx"
+          Link="reference-source\Resources\MainDashboardForm.resx" />
+    <None Include="Properties\*.bak"
+          Link="reference-source\Properties\%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,44 @@
+{
+  "name": "Full-Stack Software Engineering & Advanced Analytics Suite",
+  "version": "1.0.0",
+  "description": "An all-in-one comprehensive toolkit designed for software architecture development, systems analysis, UI/UX interface creation, logical flow validation, advanced data analytics, and real-time system monitoring.",
+  "author": "Emad Adel",
+  "entrypoint": "pom.xml",
+  "category": "Developer Tools",
+  "skills": [
+    {
+      "name": "Systems_Analysis_and_Architecture",
+      "description": "Analyzing software requirements, system design modeling, database schemas, and microservices architecture layout."
+    },
+    {
+      "name": "Full_Stack_Software_Development",
+      "description": "Writing clean code, compiled backend logic, API integration, and framework orchestration for desktop and enterprise apps."
+    },
+    {
+      "name": "UI_UX_Interface_Creation",
+      "description": "Designing dynamic interactive user interfaces, component communication, responsive layouts, and frontend events execution."
+    },
+    {
+      "name": "Business_Logic_and_Mathematical_Validation",
+      "description": "Validating algorithmic workflows, abstract logic, complex conditions, and debugging business rule processing engines."
+    },
+    {
+      "name": "Advanced_Data_Analytics_and_AI",
+      "description": "Processing structured/unstructured datasets, parsing formats (JSON/XML), statistical analysis, and generating operational insights."
+    },
+    {
+      "name": "Real_Time_Monitoring_and_Observability",
+      "description": "Continuous stream parsing, telemetry logs checking, performance auditing, live events detection, and server status monitoring."
+    }
+  ],
+  "capabilities": {
+    "fileSystem": "read_write",
+    "networkAccess": "allowed",
+    "terminalExecution": "enabled"
+  },
+  "permissions": [
+    "workspace:read",
+    "workspace:write",
+    "workspace:execute"
+  ]
+}

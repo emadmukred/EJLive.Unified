@@ -1,0 +1,57 @@
+{
+  "project": "EJLive Enterprise",
+  "recommended_plugins": [
+    {
+      "name": "GitHub",
+      "purpose": [
+        "repository analysis",
+        "issues",
+        "pull requests",
+        "code review",
+        "release notes"
+      ],
+      "priority": "high"
+    },
+    {
+      "name": "Figma/FigJam/Figma Slides",
+      "purpose": [
+        "dashboard design",
+        "UI flows",
+        "NOC cards",
+        "presentation"
+      ],
+      "priority": "medium"
+    },
+    {
+      "name": "Hugging Face",
+      "purpose": [
+        "optional log analysis experiments",
+        "AI model exploration"
+      ],
+      "priority": "optional"
+    },
+    {
+      "name": "Netlify",
+      "purpose": [
+        "optional web docs or dashboard preview"
+      ],
+      "priority": "optional"
+    },
+    {
+      "name": "Visual Studio/MSBuild/NuGet",
+      "purpose": [
+        "local build validation",
+        "package restore",
+        "WinForms checks"
+      ],
+      "priority": "high"
+    }
+  ],
+  "security_policy": [
+    "No secrets exposure",
+    "No destructive changes without review",
+    "No stealth behavior",
+    "No security tool disabling",
+    "No publishing without explicit approval"
+  ]
+}

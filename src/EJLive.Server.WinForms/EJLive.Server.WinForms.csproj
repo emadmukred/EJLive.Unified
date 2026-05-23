@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\EJLive.Core\EJLive.Core.csproj" />
+    <ProjectReference Include="..\EJLive.Shared\EJLive.Shared.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>EJLive.Server</AssemblyName>
+    <RootNamespace>EJLive.Server.WinForms</RootNamespace>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="ServerMainForm.cs" />
+    <Compile Include="PromptTextDialog.cs" />
+    <Compile Include="..\EJLive.Server\Services\JournalAnalyticsService.cs"
+             Link="Linked\LegacyServices\JournalAnalyticsService.cs" />
+    <Compile Include="..\EJLive.Server\Services\RemoteControlService.cs"
+             Link="Linked\LegacyServices\RemoteControlService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="app.config" />
+    <None Include="EJLive.Server.WinForms.csproj.user" />
+    <None Include="*.Designer.cs"
+          Link="reference-source\Designer\%(Filename)%(Extension)" />
+    <None Include="*.resx"
+          Link="reference-source\Resources\%(Filename)%(Extension)" />
+    <None Include="ATMCardPanel.cs"
+          Link="reference-source\Forms\ATMCardPanel.cs" />
+    <None Include="ATMDetailDrawerForm.cs"
+          Link="reference-source\Forms\ATMDetailDrawerForm.cs" />
+    <None Include="ATMDetailForm.cs"
+          Link="reference-source\Forms\ATMDetailForm.cs" />
+    <None Include="JournalViewerForm.cs"
+          Link="reference-source\Forms\JournalViewerForm.cs" />
+    <None Include="JournalSyncDashboardForm.cs"
+          Link="reference-source\Forms\JournalSyncDashboardForm.cs" />
+    <None Include="SyncDashboardForm.cs"
+          Link="reference-source\Forms\SyncDashboardForm.cs" />
+    <None Include="Services\**\*.*"
+          Link="reference-source\Services\%(RecursiveDir)%(Filename)%(Extension)" />
+    <None Include="Properties\*.bak"
+          Link="reference-source\Properties\%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>
