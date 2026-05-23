@@ -37,7 +37,11 @@ var checks = new List<(string Name, bool Passed, string Detail)>
     RunIntegrationAuditProbe(),
     RunServiceActivationAuditProbe(),
     await RunLegacySelectiveUpgradeProbe(),
-    RunFileLinkageProbe()
+    RunCompileMapConflictProbe(),
+    RunFileLinkageProbe(),
+    RunUnsafeTermScanProbe(),
+    RunUiInServicePathProbe(),
+    RunDuplicateTypeProbe()
 };
 
 foreach (var check in checks)
@@ -480,6 +484,71 @@ static (string Name, bool Passed, string Detail) RunFileLinkageProbe()
     catch (Exception ex)
     {
         return ("Project file linkage", false, ex.Message);
+    }
+}
+
+static (string Name, bool Passed, string Detail) RunCompileMapConflictProbe()
+{
+    try
+    {
+        var root = FindSolutionRoot();
+        var statusPath = Path.Combine(root, "docs", "12-service-activation-status.csv");
+        var mapPath = Path.Combine(root, "artifacts", "ActiveCompileMap.csv");
+
+        if (!File.Exists(statusPath))
+            return ("Compile map conflict", false, "12-service-activation-status.csv not found");
+        if (!File.Exists(mapPath))
+            return ("Compile map conflict", false, "ActiveCompileMap.csv not found");
+
+        var statusLines = File.ReadAllLines(statusPath).Skip(1)
+            .Select(line => line.Split(','))
+            .Where(parts => parts.Length >= 3)
+            .Select(parts => new { Path = parts[0].Trim('"'), Status = parts[2].Trim('"') })
+            .ToArray();
+
+        var mapLines = File.ReadAllLines(mapPath).Skip(1)
+            .Select(line => line.Split(','))
+            .Where(parts => parts.Length >= 3)
+            .Select(parts => new { Path = parts[1].Trim('"'), CompileState = parts[2].Trim('"') })
+            .ToDictionary(x => x.Path, x => x.CompileState, StringComparer.OrdinalIgnoreCase);
+
+        var critical = new List<string>();
+        var acceptable = new List<string>();
+
+        foreach (var item in statusLines)
+        {
+            var expected = item.Status;
+            var actual = mapLines.TryGetValue(item.Path, out var state) ? state : "MISSING";
+
+            if (expected.Equals("ActiveCompiled", StringComparison.OrdinalIgnoreCase) &&
+                !actual.Equals("ActiveCompiled", StringComparison.OrdinalIgnoreCase))
+            {
+                critical.Add($"{item.Path}: expected ActiveCompiled, actual {actual}");
+            }
+            else if (expected.Equals("ReferenceCovered", StringComparison.OrdinalIgnoreCase) &&
+                     actual.Equals("ActiveCompiled", StringComparison.OrdinalIgnoreCase))
+            {
+                acceptable.Add($"{item.Path}: expected ReferenceOnly, actual ActiveCompiled (cross-project linked compile)");
+            }
+            else if (expected.Equals("ReferenceCovered", StringComparison.OrdinalIgnoreCase) &&
+                     actual.Equals("Deprecated", StringComparison.OrdinalIgnoreCase))
+            {
+                acceptable.Add($"{item.Path}: expected ReferenceOnly, actual Deprecated (Compile Remove)");
+            }
+        }
+
+        var passed = critical.Count == 0;
+        var detail = $"critical={critical.Count}, acceptable={acceptable.Count}";
+        if (critical.Count > 0)
+            detail += "; critical: " + string.Join("; ", critical);
+        if (acceptable.Count > 0)
+            detail += "; acceptable: " + string.Join("; ", acceptable);
+
+        return ("Compile map conflict", passed, detail);
+    }
+    catch (Exception ex)
+    {
+        return ("Compile map conflict", false, ex.Message);
     }
 }
 
@@ -1122,6 +1191,142 @@ static string BuildAuditSafeName(string name)
         : safeName;
 }
 
+static (string Name, bool Passed, string Detail) RunUnsafeTermScanProbe()
+{
+    try
+    {
+        var root = FindSolutionRoot();
+        var srcRoot = Path.Combine(root, "src");
+        var unsafeTerms = new[] { "Stealth", "HiddenProcess", "DisableDefender", "DisableFirewall", "BypassGpo", "KillProcess", "ArbitraryShell", "ExecScript", "NoConsentPrompt" };
+        var allowedExceptions = new[] { "GhostRemoteEngine", "GhostRemote2Service" }; // Explicitly allowed legacy names under review
+        var violations = new List<string>();
+
+        foreach (var csFile in Directory.EnumerateFiles(srcRoot, "*.cs", SearchOption.AllDirectories))
+        {
+            var rel = Path.GetRelativePath(root, csFile).Replace('\\', '/');
+            if (IsBuildOutput(rel))
+                continue;
+            // Skip reference-only files (None Include)
+            if (rel.Contains("/reference-source/", StringComparison.OrdinalIgnoreCase))
+                continue;
+            var content = File.ReadAllText(csFile);
+            foreach (var term in unsafeTerms)
+            {
+                if (content.Contains(term, StringComparison.OrdinalIgnoreCase) &&
+                    !allowedExceptions.Any(ex => content.Contains(ex, StringComparison.OrdinalIgnoreCase)))
+                {
+                    violations.Add($"{rel}: contains '{term}'");
+                }
+            }
+        }
+
+        var passed = violations.Count == 0;
+        return ("Unsafe term scan", passed, $"violations={violations.Count}, samples={string.Join('; ', violations.Take(3))}");
+    }
+    catch (Exception ex)
+    {
+        return ("Unsafe term scan", false, ex.Message);
+    }
+}
+
+static (string Name, bool Passed, string Detail) RunUiInServicePathProbe()
+{
+    try
+    {
+        var root = FindSolutionRoot();
+        var servicePaths = new[]
+        {
+            Path.Combine(root, "src", "EJLive.Client.Service"),
+            Path.Combine(root, "src", "EJLive.Client.WinForms", "Agent"),
+            Path.Combine(root, "src", "EJLive.Client.WinForms", "Services"),
+            Path.Combine(root, "src", "EJLive.Core", "Services"),
+            Path.Combine(root, "src", "EJLive.Core", "Engine"),
+            Path.Combine(root, "src", "EJLive.Server", "Services"),
+            Path.Combine(root, "src", "EJLive.Server.WinForms", "Services"),
+        };
+        var uiIndicators = new[] { "System.Windows.Forms", "MessageBox", "Form", "Control", "Button", "TextBox", "DataGridView", "DialogResult" };
+        var violations = new List<string>();
+
+        foreach (var path in servicePaths.Where(Directory.Exists))
+        {
+            foreach (var csFile in Directory.EnumerateFiles(path, "*.cs", SearchOption.AllDirectories))
+            {
+                var rel = Path.GetRelativePath(root, csFile).Replace('\\', '/');
+                if (IsBuildOutput(rel))
+                    continue;
+                var content = File.ReadAllText(csFile);
+                foreach (var indicator in uiIndicators)
+                {
+                    if (content.Contains(indicator, StringComparison.OrdinalIgnoreCase))
+                    {
+                        // Allow comments that document UI boundary
+                        var lines = content.Split('\n').Where(l => l.Contains(indicator, StringComparison.OrdinalIgnoreCase)).ToArray();
+                        var codeLines = lines.Where(l => !l.TrimStart().StartsWith("//") && !l.TrimStart().StartsWith("*")).ToArray();
+                        if (codeLines.Length > 0)
+                        {
+                            violations.Add($"{rel}: references '{indicator}'");
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        var passed = violations.Count == 0;
+        return ("UI-in-service-path scan", passed, $"violations={violations.Count}, samples={string.Join('; ', violations.Take(3))}");
+    }
+    catch (Exception ex)
+    {
+        return ("UI-in-service-path scan", false, ex.Message);
+    }
+}
+
+static (string Name, bool Passed, string Detail) RunDuplicateTypeProbe()
+{
+    try
+    {
+        var assemblies = new[]
+        {
+            typeof(EJLive.Application.EJLiveApplicationHost).Assembly,
+            typeof(EJLive.Business.UnifiedBusinessRuntime).Assembly,
+            typeof(EJLive.Core.Constants).Assembly,
+            typeof(EJLive.Shared.SecurityHelper).Assembly,
+            typeof(EJLive.Client.Service.ClientAgentWindowsService).Assembly,
+            typeof(EJLive.Client.WinForms.ClientMainForm).Assembly,
+            typeof(EJLive.Server.WinForms.ServerMainForm).Assembly,
+            typeof(EJLive.Installer.WinForms.InstallerForm).Assembly,
+            typeof(EJLive.Monitoring.WinForms.MainDashboardForm).Assembly,
+            typeof(EJLive.Monitor.MonitoringDashboard).Assembly,
+        };
+
+        var typeNames = new Dictionary<string, List<string>>(StringComparer.OrdinalIgnoreCase);
+        foreach (var assembly in assemblies)
+        {
+            foreach (var type in assembly.GetTypes())
+            {
+                if (!typeNames.TryGetValue(type.Name, out var list))
+                {
+                    list = new List<string>();
+                    typeNames[type.Name] = list;
+                }
+                list.Add(assembly.GetName().Name ?? "?");
+            }
+        }
+
+        var duplicates = typeNames
+            .Where(kvp => kvp.Value.Count > 1 && kvp.Value.Distinct(StringComparer.OrdinalIgnoreCase).Count() > 1)
+            .Select(kvp => $"{kvp.Key}: [{string.Join(", ", kvp.Value.Distinct(StringComparer.OrdinalIgnoreCase))}]")
+            .ToArray();
+
+        var passed = duplicates.Length == 0;
+        return ("Duplicate type detection", passed, $"duplicates={duplicates.Length}, samples={string.Join('; ', duplicates.Take(3))}");
+    }
+    catch (Exception ex)
+    {
+        return ("Duplicate type detection", false, ex.Message);
+    }
+}
+
 static string FindSolutionRoot()
 {
     var directory = new DirectoryInfo(AppContext.BaseDirectory);
@@ -1139,7 +1344,8 @@ static bool IsBuildOutput(string path)
     var normalized = path.Replace('\\', '/');
     return normalized.Contains("/bin/", StringComparison.OrdinalIgnoreCase) ||
            normalized.Contains("/obj/", StringComparison.OrdinalIgnoreCase) ||
-           normalized.Contains("/.vs/", StringComparison.OrdinalIgnoreCase);
+           normalized.Contains("/.vs/", StringComparison.OrdinalIgnoreCase) ||
+           normalized.Contains("/artifacts/", StringComparison.OrdinalIgnoreCase);
 }
 
 static bool IsAccounted(string relativePath, ISet<string> projectFolders, ISet<string> linkedSourceFolders)

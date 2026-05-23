@@ -1,0 +1,7 @@
+﻿"Path","Project","ExpectedState","ActualState","Issue"
+"src/EJLive.Server/Services/JournalAnalyticsService.cs","EJLive.Server","ReferenceOnly","ActiveCompiled","State mismatch"
+"src/EJLive.Server/Services/RemoteControlService.cs","EJLive.Server","ReferenceOnly","ActiveCompiled","State mismatch"
+"src/EJLive.Shared/LightUiTheme.cs","EJLive.Shared","ReferenceOnly","ActiveCompiled","State mismatch"
+"src/EJLive.Shared/Logger.cs","EJLive.Shared","ReferenceOnly","Deprecated","State mismatch"
+"src/EJLive.Shared/MonitoringState.cs","EJLive.Shared","ReferenceOnly","Deprecated","State mismatch"
+"src/EJLive.Shared/MonitoringStateStore.cs","EJLive.Shared","ReferenceOnly","Deprecated","State mismatch"

@@ -1,0 +1,19 @@
+Project,File,CurrentState,RecommendedAction,Notes
+EJLive.Core,Engine/FileWatcherEngine.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Core,Engine/FleetPredictionEngine.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Core,Engine/GhostRemoteEngine.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Core,Engine/ImageSyncEngine.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Core,Engine/JournalSyncTracker.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Core,Engine/Protocol.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Core,Engine/ReportExportEngine.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Core,Engine/ServerEngine.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Core,Engine/TransactionAnalysisEngine.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Core,Models/JournalSyncModels.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Core,Sync/JournalSyncModels.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Server.WinForms,JournalSyncDashboardForm.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Server.WinForms,Services/ArchiveManager.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Server.WinForms,Services/EJServer.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Server.WinForms,Services/EJServerService.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Server.WinForms,Services/UIBinder.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Server.WinForms,SyncDashboardForm.Designer.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state
+EJLive.Server.WinForms,SyncDashboardForm.cs,ReferenceOnly,CandidateForPromotion,Service-like file in reference-only state

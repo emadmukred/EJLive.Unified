@@ -1,0 +1,297 @@
+Project,Path,CompileState,IncludeSource,Reason
+EJLive.Application,EJLive.Application.csproj,ActiveContent,Content file,Content file
+EJLive.Application,EJLiveApplicationHost.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Application,obj/EJLive.Application.csproj.nuget.dgspec.json,ActiveContent,Content file,Content file
+EJLive.Application,obj/EJLive.Application.csproj.nuget.g.props,ActiveContent,Content file,Content file
+EJLive.Application,obj/EJLive.Application.csproj.nuget.g.targets,ActiveContent,Content file,Content file
+EJLive.Application,obj/project.assets.json,ActiveContent,Content file,Content file
+EJLive.Application,obj/project.nuget.cache,ActiveContent,Content file,Content file
+EJLive.Business,EJLive.Business.csproj,ActiveContent,Content file,Content file
+EJLive.Business,OriginalSourceCatalog.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Business,UnifiedBusinessRuntime.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Business,obj/EJLive.Business.csproj.nuget.dgspec.json,ActiveContent,Content file,Content file
+EJLive.Business,obj/EJLive.Business.csproj.nuget.g.props,ActiveContent,Content file,Content file
+EJLive.Business,obj/EJLive.Business.csproj.nuget.g.targets,ActiveContent,Content file,Content file
+EJLive.Business,obj/project.assets.json,ActiveContent,Content file,Content file
+EJLive.Business,obj/project.nuget.cache,ActiveContent,Content file,Content file
+EJLive.Client.Service,ClientAgentWindowsService.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Client.Service,EJLive.Client.Service.csproj,ActiveContent,Content file,Content file
+EJLive.Client.Service,Program.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Client.Service,obj/EJLive.Client.Service.csproj.nuget.dgspec.json,ActiveContent,Content file,Content file
+EJLive.Client.Service,obj/EJLive.Client.Service.csproj.nuget.g.props,ActiveContent,Content file,Content file
+EJLive.Client.Service,obj/EJLive.Client.Service.csproj.nuget.g.targets,ActiveContent,Content file,Content file
+EJLive.Client.Service,obj/project.assets.json,ActiveContent,Content file,Content file
+EJLive.Client.Service,obj/project.nuget.cache,ActiveContent,Content file,Content file
+EJLive.Client.WinForms,Agent/AgentBootstrapper.cs,ActiveCompiled,"Compile Include=""Agent/AgentBootstrapper.cs""","Compile Include=""Agent/AgentBootstrapper.cs"""
+EJLive.Client.WinForms,Agent/AgentTrayContext.cs,ActiveCompiled,"Compile Include=""Agent/AgentTrayContext.cs""","Compile Include=""Agent/AgentTrayContext.cs"""
+EJLive.Client.WinForms,Agent/AutoAdminSetup.cs,ActiveCompiled,"Compile Include=""Agent/AutoAdminSetup.cs""","Compile Include=""Agent/AutoAdminSetup.cs"""
+EJLive.Client.WinForms,Agent/BootNotifier.cs,ActiveCompiled,"Compile Include=""Agent/BootNotifier.cs""","Compile Include=""Agent/BootNotifier.cs"""
+EJLive.Client.WinForms,Agent/LogBackupScheduler.cs,ActiveCompiled,"Compile Include=""Agent/LogBackupScheduler.cs""","Compile Include=""Agent/LogBackupScheduler.cs"""
+EJLive.Client.WinForms,Agent/NetworkMonitor.cs,ActiveCompiled,"Compile Include=""Agent/NetworkMonitor.cs""","Compile Include=""Agent/NetworkMonitor.cs"""
+EJLive.Client.WinForms,Agent/ScreenshotScheduler.cs,ActiveCompiled,"Compile Include=""Agent/ScreenshotScheduler.cs""","Compile Include=""Agent/ScreenshotScheduler.cs"""
+EJLive.Client.WinForms,Agent/TimeSyncScheduler.cs,ActiveCompiled,"Compile Include=""Agent/TimeSyncScheduler.cs""","Compile Include=""Agent/TimeSyncScheduler.cs"""
+EJLive.Client.WinForms,AppBootstrapper.cs,ActiveCompiled,"Compile Include=""AppBootstrapper.cs""","Compile Include=""AppBootstrapper.cs"""
+EJLive.Client.WinForms,ClientBackgroundApplicationContext.cs,ActiveCompiled,"Compile Include=""ClientBackgroundApplicationContext.cs""","Compile Include=""ClientBackgroundApplicationContext.cs"""
+EJLive.Client.WinForms,ClientMainForm.Designer.cs,ReferenceOnly,"None Include=""ClientMainForm.Designer.cs""","None Include=""ClientMainForm.Designer.cs"""
+EJLive.Client.WinForms,ClientMainForm.bind.cs,ReferenceOnly,"EnableDefaultItems=false, no explicit Compile Include","EnableDefaultItems=false, no explicit Compile Include"
+EJLive.Client.WinForms,ClientMainForm.cs,ActiveCompiled,"Compile Include=""ClientMainForm.cs""","Compile Include=""ClientMainForm.cs"""
+EJLive.Client.WinForms,ClientMainForm.resx,ReferenceOnly,"None Include=""ClientMainForm.resx""","None Include=""ClientMainForm.resx"""
+EJLive.Client.WinForms,ClientStartupPlanner.cs,ActiveCompiled,"Compile Include=""ClientStartupPlanner.cs""","Compile Include=""ClientStartupPlanner.cs"""
+EJLive.Client.WinForms,Controls/ATMCardControl.cs,ReferenceOnly,"None Include=""Controls/**/*.*""","None Include=""Controls/**/*.*"""
+EJLive.Client.WinForms,Controls/DarkButton.cs,ReferenceOnly,"None Include=""Controls/**/*.*""","None Include=""Controls/**/*.*"""
+EJLive.Client.WinForms,Controls/StatusCard.cs,ReferenceOnly,"None Include=""Controls/**/*.*""","None Include=""Controls/**/*.*"""
+EJLive.Client.WinForms,Controls/ThemeColors.cs,ReferenceOnly,"None Include=""Controls/**/*.*""","None Include=""Controls/**/*.*"""
+EJLive.Client.WinForms,Controls/ToastNotification.cs,ReferenceOnly,"None Include=""Controls/**/*.*""","None Include=""Controls/**/*.*"""
+EJLive.Client.WinForms,Database/supabase_schema.sql,ReferenceOnly,"None Include=""Database/supabase_schema.sql""","None Include=""Database/supabase_schema.sql"""
+EJLive.Client.WinForms,EJLive.Client.WinForms.csproj,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Client.WinForms,EJLive.Client.WinForms.csproj.user,ReferenceOnly,"None Include=""EJLive.Client.WinForms.csproj.user""","None Include=""EJLive.Client.WinForms.csproj.user"""
+EJLive.Client.WinForms,Program.cs,ActiveCompiled,"Compile Include=""Program.cs""","Compile Include=""Program.cs"""
+EJLive.Client.WinForms,Properties/AssemblyInfo.cs,ActiveCompiled,"Compile Include=""Properties/AssemblyInfo.cs""","Compile Include=""Properties/AssemblyInfo.cs"""
+EJLive.Client.WinForms,Properties/Resources.Designer.cs,ReferenceOnly,"None Include=""Properties/Resources.*""","None Include=""Properties/Resources.*"""
+EJLive.Client.WinForms,Properties/Resources.resx,ReferenceOnly,"None Include=""Properties/Resources.*""","None Include=""Properties/Resources.*"""
+EJLive.Client.WinForms,Resources/labels_en.json,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Client.WinForms,Services/AdvancedJournalProcessor.cs,ActiveCompiled,"Compile Include=""Services/AdvancedJournalProcessor.cs""","Compile Include=""Services/AdvancedJournalProcessor.cs"""
+EJLive.Client.WinForms,Services/AdvancedNetworkManager.cs,ActiveCompiled,"Compile Include=""Services/AdvancedNetworkManager.cs""","Compile Include=""Services/AdvancedNetworkManager.cs"""
+EJLive.Client.WinForms,Services/AdvancedRemoteCommandHandler.cs,ActiveCompiled,"Compile Include=""Services/AdvancedRemoteCommandHandler.cs""","Compile Include=""Services/AdvancedRemoteCommandHandler.cs"""
+EJLive.Client.WinForms,Services/CashTelemetryService.cs,ActiveCompiled,"Compile Include=""Services/CashTelemetryService.cs""","Compile Include=""Services/CashTelemetryService.cs"""
+EJLive.Client.WinForms,Services/ClientConstants.cs,ActiveCompiled,"Compile Include=""Services/ClientConstants.cs""","Compile Include=""Services/ClientConstants.cs"""
+EJLive.Client.WinForms,Services/FileDeliveryConfirmationTracker.cs,ActiveCompiled,"Compile Include=""Services/FileDeliveryConfirmationTracker.cs""","Compile Include=""Services/FileDeliveryConfirmationTracker.cs"""
+EJLive.Client.WinForms,Services/JournalProcessor.cs,ActiveCompiled,"Compile Include=""Services/JournalProcessor.cs""","Compile Include=""Services/JournalProcessor.cs"""
+EJLive.Client.WinForms,Services/JournalSyncAgent.cs,ActiveCompiled,"Compile Include=""Services/JournalSyncAgent.cs""","Compile Include=""Services/JournalSyncAgent.cs"""
+EJLive.Client.WinForms,Services/LabelMappingService.cs,ActiveCompiled,"Compile Include=""Services/LabelMappingService.cs""","Compile Include=""Services/LabelMappingService.cs"""
+EJLive.Client.WinForms,Services/LegacySnippetAdapters.cs,ActiveCompiled,"Compile Include=""Services/LegacySnippetAdapters.cs""","Compile Include=""Services/LegacySnippetAdapters.cs"""
+EJLive.Client.WinForms,Services/NetworkEngine.cs,ActiveCompiled,"Compile Include=""Services/NetworkEngine.cs""","Compile Include=""Services/NetworkEngine.cs"""
+EJLive.Client.WinForms,Services/NetworkManager.cs,ActiveCompiled,"Compile Include=""Services/NetworkManager.cs""","Compile Include=""Services/NetworkManager.cs"""
+EJLive.Client.WinForms,Services/RemoteCommandHandler.cs,ActiveCompiled,"Compile Include=""Services/RemoteCommandHandler.cs""","Compile Include=""Services/RemoteCommandHandler.cs"""
+EJLive.Client.WinForms,Services/RuntimeAgentConfigResolver.cs,ActiveCompiled,"Compile Include=""Services/RuntimeAgentConfigResolver.cs""","Compile Include=""Services/RuntimeAgentConfigResolver.cs"""
+EJLive.Client.WinForms,Services/ServiceRegistry.cs,ActiveCompiled,"Compile Include=""Services/ServiceRegistry.cs""","Compile Include=""Services/ServiceRegistry.cs"""
+EJLive.Client.WinForms,Services/SessionCompanionIpc.cs,ActiveCompiled,"Compile Include=""Services/SessionCompanionIpc.cs""","Compile Include=""Services/SessionCompanionIpc.cs"""
+EJLive.Client.WinForms,Services/UIBinder.cs,ActiveCompiled,"Compile Include=""Services/UIBinder.cs""","Compile Include=""Services/UIBinder.cs"""
+EJLive.Client.WinForms,Services/WindowsPolicyEnforcer.cs,ActiveCompiled,"Compile Include=""Services/WindowsPolicyEnforcer.cs""","Compile Include=""Services/WindowsPolicyEnforcer.cs"""
+EJLive.Client.WinForms,Services/WindowsRemoteAccessService.cs,ActiveCompiled,"Compile Include=""Services/WindowsRemoteAccessService.cs""","Compile Include=""Services/WindowsRemoteAccessService.cs"""
+EJLive.Client.WinForms,Services/WindowsServiceRegistrationService.cs,ActiveCompiled,"Compile Include=""Services/WindowsServiceRegistrationService.cs""","Compile Include=""Services/WindowsServiceRegistrationService.cs"""
+EJLive.Client.WinForms,Services/WindowsStartupService.cs,ActiveCompiled,"Compile Include=""Services/WindowsStartupService.cs""","Compile Include=""Services/WindowsStartupService.cs"""
+EJLive.Client.WinForms,Supabase/SupabaseModels.cs,ActiveCompiled,"Compile Include=""Supabase/SupabaseModels.cs""","Compile Include=""Supabase/SupabaseModels.cs"""
+EJLive.Client.WinForms,Supabase/SupabaseSync.cs,ActiveCompiled,"Compile Include=""Supabase/SupabaseSync.cs""","Compile Include=""Supabase/SupabaseSync.cs"""
+EJLive.Client.WinForms,app.config,ReferenceOnly,"None Include=""app.config""","None Include=""app.config"""
+EJLive.Client.WinForms,app.manifest,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Client.WinForms,obj/EJLive.Client.WinForms.csproj.nuget.dgspec.json,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Client.WinForms,obj/EJLive.Client.WinForms.csproj.nuget.g.props,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Client.WinForms,obj/EJLive.Client.WinForms.csproj.nuget.g.targets,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Client.WinForms,obj/project.assets.json,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Client.WinForms,obj/project.nuget.cache,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Client.WinForms,packages.config,ReferenceOnly,"None Include=""packages.config""","None Include=""packages.config"""
+EJLive.Core,App.config,ReferenceOnly,"None Include=""App.config""","None Include=""App.config"""
+EJLive.Core,Compatibility/StringCompatibilityExtensions.cs,ReferenceOnly,"None Include=""Compatibility/**/*.*""","None Include=""Compatibility/**/*.*"""
+EJLive.Core,Constants.cs,ActiveCompiled,"Compile Include=""Constants.cs""","Compile Include=""Constants.cs"""
+EJLive.Core,EJLive.Core.csproj,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Core,Engine/CommunicationProtocol.cs,ActiveCompiled,"Compile Include=""Engine/CommunicationProtocol.cs""","Compile Include=""Engine/CommunicationProtocol.cs"""
+EJLive.Core,Engine/FileWatcherEngine.cs,ReferenceOnly,"None Include=""Engine/**/*.*""","None Include=""Engine/**/*.*"""
+EJLive.Core,Engine/FleetPredictionEngine.cs,ReferenceOnly,"None Include=""Engine/**/*.*""","None Include=""Engine/**/*.*"""
+EJLive.Core,Engine/GhostRemoteEngine.cs,ReferenceOnly,"None Include=""Engine/**/*.*""","None Include=""Engine/**/*.*"""
+EJLive.Core,Engine/ImageSyncEngine.cs,ReferenceOnly,"None Include=""Engine/**/*.*""","None Include=""Engine/**/*.*"""
+EJLive.Core,Engine/JournalOutbox.cs,ActiveCompiled,"Compile Include=""Engine/JournalOutbox.cs""","Compile Include=""Engine/JournalOutbox.cs"""
+EJLive.Core,Engine/JournalSyncTracker.cs,ReferenceOnly,"None Include=""Engine/**/*.*""","None Include=""Engine/**/*.*"""
+EJLive.Core,Engine/NetworkEngine.cs,ActiveCompiled,"Compile Include=""Engine/NetworkEngine.cs""","Compile Include=""Engine/NetworkEngine.cs"""
+EJLive.Core,Engine/OperationalEngines.cs,ActiveCompiled,"Compile Include=""Engine/OperationalEngines.cs""","Compile Include=""Engine/OperationalEngines.cs"""
+EJLive.Core,Engine/Protocol.cs,ReferenceOnly,"None Include=""Engine/**/*.*""","None Include=""Engine/**/*.*"""
+EJLive.Core,Engine/ReportExportEngine.cs,ReferenceOnly,"None Include=""Engine/**/*.*""","None Include=""Engine/**/*.*"""
+EJLive.Core,Engine/ServerEngine.cs,ReferenceOnly,"None Include=""Engine/**/*.*""","None Include=""Engine/**/*.*"""
+EJLive.Core,Engine/TransactionAnalysisEngine.cs,ReferenceOnly,"None Include=""Engine/**/*.*""","None Include=""Engine/**/*.*"""
+EJLive.Core,Models/ATMInfo.cs,ReferenceOnly,"None Include=""Models/**/*.*""","None Include=""Models/**/*.*"""
+EJLive.Core,Models/AnalysisRuntimeModels.cs,ReferenceOnly,"None Include=""Models/**/*.*""","None Include=""Models/**/*.*"""
+EJLive.Core,Models/CompatibilityModels.cs,ReferenceOnly,"None Include=""Models/**/*.*""","None Include=""Models/**/*.*"""
+EJLive.Core,Models/JournalArchiveModels.cs,ActiveCompiled,"Compile Include=""Models/JournalArchiveModels.cs""","Compile Include=""Models/JournalArchiveModels.cs"""
+EJLive.Core,Models/JournalSyncModels.cs,ReferenceOnly,"None Include=""Models/**/*.*""","None Include=""Models/**/*.*"""
+EJLive.Core,Models/MergedTraceModels.cs,ReferenceOnly,"None Include=""Models/**/*.*""","None Include=""Models/**/*.*"""
+EJLive.Core,Models/NcrCapabilityModels.cs,ReferenceOnly,"None Include=""Models/**/*.*""","None Include=""Models/**/*.*"""
+EJLive.Core,Models/NcrConfigCapabilityModels.cs,ReferenceOnly,"None Include=""Models/**/*.*""","None Include=""Models/**/*.*"""
+EJLive.Core,Models/NcrConfigModels.cs,ActiveCompiled,"Compile Include=""Models/NcrConfigModels.cs""","Compile Include=""Models/NcrConfigModels.cs"""
+EJLive.Core,Models/NcrConfigProfileModels.cs,ReferenceOnly,"None Include=""Models/**/*.*""","None Include=""Models/**/*.*"""
+EJLive.Core,Models/NcrConfigurationModels.cs,ActiveCompiled,"Compile Include=""Models/NcrConfigurationModels.cs""","Compile Include=""Models/NcrConfigurationModels.cs"""
+EJLive.Core,Models/OperationalContracts.cs,ReferenceOnly,"None Include=""Models/**/*.*""","None Include=""Models/**/*.*"""
+EJLive.Core,Models/TransactionModels.cs,ReferenceOnly,"None Include=""Models/**/*.*""","None Include=""Models/**/*.*"""
+EJLive.Core,Models/UnifiedModels.cs,ActiveCompiled,"Compile Include=""Models/UnifiedModels.cs""","Compile Include=""Models/UnifiedModels.cs"""
+EJLive.Core,Models/VendorRootProfileModels.cs,ActiveCompiled,"Compile Include=""Models/VendorRootProfileModels.cs""","Compile Include=""Models/VendorRootProfileModels.cs"""
+EJLive.Core,Properties/AssemblyInfo.cs,ActiveCompiled,"Compile Include=""Properties/AssemblyInfo.cs""","Compile Include=""Properties/AssemblyInfo.cs"""
+EJLive.Core,Services/AgentConfigurationXmlService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/AlertManager.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/AuditLogger.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/ClientTelemetryAnalyticsService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/CommandSigningEngine.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/CoreServices.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/DatabaseManager.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/GhostRemote2Service.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/IJournalSyncService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/JournalReadService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/JournalSyncAlertService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/JournalSyncDashboardService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/JournalSyncMonitorService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/JournalSyncService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/JournalSyncServiceStub.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/JournalSyncStateService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/JournalSyncStateStore.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/JournalSyncTracker.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/JournalSyncTrackerService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/JournalSyncTrackingService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/JournalTransferIntelligenceService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/MergedTraceCorrelationService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/NcrConfigCapabilityParser.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/NcrConfigurationCapabilityParser.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/NcrReferenceCapabilityFactory.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/OperationalReportCatalogService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/OperationalStateStore.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/RoleBasedAccess.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/ServiceLocator.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/SovereignEngineCompatibility.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/UnifiedOperationalFusion.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/UnifiedOperationalReportingService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/UnifiedServerAnalyticsService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/UnifiedServiceGateway.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/UnifiedServiceOperations.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/VendorRootCapabilityService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/VendorRootProfileCatalogService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Services/XfsLogAnalysisService.cs,ActiveCompiled,"Compile Include=""Services/*.cs""","Compile Include=""Services/*.cs"""
+EJLive.Core,Sync/JournalSyncModels.cs,ReferenceOnly,"None Include=""Sync/**/*.*""","None Include=""Sync/**/*.*"""
+EJLive.Core,Xfs/Adapters/CardReaderTraceAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/DebugTraceAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/DieboldMdsAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/GrgJournalAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/GrgXfsAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/HostMessageInAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/HostMessageOutAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/IXfsVendorAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/NcrCardReaderTraceAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/NcrDebugTraceAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/NcrHostMessageInAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/NcrHostMessageOutAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/NcrJournalAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/NcrOoxfsRuntimeAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/NcrXfsAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Adapters/OoxfsRuntimeAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/IXfsVendorAdapter.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/Models/XfsNormalizedModels.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/XfsAdapterRegistry.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/XfsEventModels.cs,ReferenceOnly,"None Include=""Xfs/**/*.*""","None Include=""Xfs/**/*.*"""
+EJLive.Core,Xfs/XfsModels.cs,ActiveCompiled,"Compile Include=""Xfs/XfsModels.cs""","Compile Include=""Xfs/XfsModels.cs"""
+EJLive.Core,obj/EJLive.Core.csproj.nuget.dgspec.json,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Core,obj/EJLive.Core.csproj.nuget.g.props,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Core,obj/EJLive.Core.csproj.nuget.g.targets,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Core,obj/project.assets.json,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Core,obj/project.nuget.cache,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Core,packages.config,ReferenceOnly,"None Include=""packages.config""","None Include=""packages.config"""
+EJLive.Installer.WinForms,EJLive.Installer.WinForms.csproj,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Installer.WinForms,EJLive.Installer.WinForms.csproj.user,ReferenceOnly,"None Include=""EJLive.Installer.WinForms.csproj.user""","None Include=""EJLive.Installer.WinForms.csproj.user"""
+EJLive.Installer.WinForms,InstallerAutomationRunner.cs,ActiveCompiled,"Compile Include=""InstallerAutomationRunner.cs""","Compile Include=""InstallerAutomationRunner.cs"""
+EJLive.Installer.WinForms,InstallerForm.Designer.cs,ReferenceOnly,"None Include=""InstallerForm.Designer.cs""","None Include=""InstallerForm.Designer.cs"""
+EJLive.Installer.WinForms,InstallerForm.cs,ActiveCompiled,"Compile Include=""InstallerForm.cs""","Compile Include=""InstallerForm.cs"""
+EJLive.Installer.WinForms,InstallerOperationalSecurityService.cs,ActiveCompiled,"Compile Include=""InstallerOperationalSecurityService.cs""","Compile Include=""InstallerOperationalSecurityService.cs"""
+EJLive.Installer.WinForms,Program.cs,ActiveCompiled,"Compile Include=""Program.cs""","Compile Include=""Program.cs"""
+EJLive.Installer.WinForms,Properties/AssemblyInfo.cs,ActiveCompiled,"Compile Include=""Properties/AssemblyInfo.cs""","Compile Include=""Properties/AssemblyInfo.cs"""
+EJLive.Installer.WinForms,Properties/AssemblyInfo.cs.bak,ReferenceOnly,"None Include=""Properties/*.bak""","None Include=""Properties/*.bak"""
+EJLive.Installer.WinForms,app.config,ReferenceOnly,"None Include=""app.config""","None Include=""app.config"""
+EJLive.Installer.WinForms,app.manifest,ReferenceOnly,"None Include=""app.manifest""","None Include=""app.manifest"""
+EJLive.Installer.WinForms,obj/EJLive.Installer.WinForms.csproj.nuget.dgspec.json,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Installer.WinForms,obj/EJLive.Installer.WinForms.csproj.nuget.g.props,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Installer.WinForms,obj/EJLive.Installer.WinForms.csproj.nuget.g.targets,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Installer.WinForms,obj/project.assets.json,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Installer.WinForms,obj/project.nuget.cache,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Installer.WinForms,packages.config,ReferenceOnly,"None Include=""packages.config""","None Include=""packages.config"""
+EJLive.LegacyReference,LegacyReferenceMarker.cs,ActiveCompiled,Compile Include,Explicit compile
+EJLive.LegacyReference,(all other files via None Include patterns),ReferenceOnly,None Include,Legacy archive reference
+EJLive.Monitor,App.config,ReferenceOnly,"None Include=""App.config""","None Include=""App.config"""
+EJLive.Monitor,EJLive.Monitor.csproj,ActiveContent,Content file,Content file
+EJLive.Monitor,MonitoringDashboard.Designer.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Monitor,MonitoringDashboard.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Monitor,Properties/AssemblyInfo.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Monitor,obj/EJLive.Monitor.csproj.nuget.dgspec.json,ActiveContent,Content file,Content file
+EJLive.Monitor,obj/EJLive.Monitor.csproj.nuget.g.props,ActiveContent,Content file,Content file
+EJLive.Monitor,obj/EJLive.Monitor.csproj.nuget.g.targets,ActiveContent,Content file,Content file
+EJLive.Monitor,obj/project.assets.json,ActiveContent,Content file,Content file
+EJLive.Monitor,obj/project.nuget.cache,ActiveContent,Content file,Content file
+EJLive.Monitor,packages.config,ReferenceOnly,"None Include=""packages.config""","None Include=""packages.config"""
+EJLive.Monitoring.WinForms,EJLive.Monitoring.WinForms.csproj,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Monitoring.WinForms,EJLive.Monitoring.WinForms.csproj.user,ReferenceOnly,"None Include=""EJLive.Monitoring.WinForms.csproj.user""","None Include=""EJLive.Monitoring.WinForms.csproj.user"""
+EJLive.Monitoring.WinForms,MainDashboardForm.Designer.cs,ReferenceOnly,"None Include=""MainDashboardForm.Designer.cs""","None Include=""MainDashboardForm.Designer.cs"""
+EJLive.Monitoring.WinForms,MainDashboardForm.cs,ActiveCompiled,"Compile Include=""MainDashboardForm.cs""","Compile Include=""MainDashboardForm.cs"""
+EJLive.Monitoring.WinForms,MainDashboardForm.resx,ReferenceOnly,"None Include=""MainDashboardForm.resx""","None Include=""MainDashboardForm.resx"""
+EJLive.Monitoring.WinForms,Models/DashboardModels.cs,ActiveCompiled,"Compile Include=""Models/DashboardModels.cs""","Compile Include=""Models/DashboardModels.cs"""
+EJLive.Monitoring.WinForms,Program.cs,ActiveCompiled,"Compile Include=""Program.cs""","Compile Include=""Program.cs"""
+EJLive.Monitoring.WinForms,Properties/AssemblyInfo.cs,ActiveCompiled,"Compile Include=""Properties/AssemblyInfo.cs""","Compile Include=""Properties/AssemblyInfo.cs"""
+EJLive.Monitoring.WinForms,Properties/AssemblyInfo.cs.bak,ReferenceOnly,"None Include=""Properties/*.bak""","None Include=""Properties/*.bak"""
+EJLive.Monitoring.WinForms,app.config,ReferenceOnly,"None Include=""app.config""","None Include=""app.config"""
+EJLive.Monitoring.WinForms,obj/EJLive.Monitoring.WinForms.csproj.nuget.dgspec.json,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Monitoring.WinForms,obj/EJLive.Monitoring.WinForms.csproj.nuget.g.props,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Monitoring.WinForms,obj/EJLive.Monitoring.WinForms.csproj.nuget.g.targets,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Monitoring.WinForms,obj/project.assets.json,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Monitoring.WinForms,obj/project.nuget.cache,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Monitoring.WinForms,packages.config,ReferenceOnly,"None Include=""packages.config""","None Include=""packages.config"""
+EJLive.Server.WinForms,ATMCardPanel.cs,ReferenceOnly,"None Include=""ATMCardPanel.cs""","None Include=""ATMCardPanel.cs"""
+EJLive.Server.WinForms,ATMDetailDrawerForm.Designer.cs,ReferenceOnly,"None Include=""*.Designer.cs""","None Include=""*.Designer.cs"""
+EJLive.Server.WinForms,ATMDetailDrawerForm.cs,ReferenceOnly,"None Include=""ATMDetailDrawerForm.cs""","None Include=""ATMDetailDrawerForm.cs"""
+EJLive.Server.WinForms,ATMDetailForm.Designer.cs,ReferenceOnly,"None Include=""*.Designer.cs""","None Include=""*.Designer.cs"""
+EJLive.Server.WinForms,ATMDetailForm.cs,ReferenceOnly,"None Include=""ATMDetailForm.cs""","None Include=""ATMDetailForm.cs"""
+EJLive.Server.WinForms,EJLive.Server.WinForms.csproj,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Server.WinForms,EJLive.Server.WinForms.csproj.user,ReferenceOnly,"None Include=""EJLive.Server.WinForms.csproj.user""","None Include=""EJLive.Server.WinForms.csproj.user"""
+EJLive.Server.WinForms,JournalSyncDashboardForm.cs,ReferenceOnly,"None Include=""JournalSyncDashboardForm.cs""","None Include=""JournalSyncDashboardForm.cs"""
+EJLive.Server.WinForms,JournalSyncDashboardForm.resx,ReferenceOnly,"None Include=""*.resx""","None Include=""*.resx"""
+EJLive.Server.WinForms,JournalViewerForm.Designer.cs,ReferenceOnly,"None Include=""*.Designer.cs""","None Include=""*.Designer.cs"""
+EJLive.Server.WinForms,JournalViewerForm.bind.cs,ReferenceOnly,"EnableDefaultItems=false, no explicit Compile Include","EnableDefaultItems=false, no explicit Compile Include"
+EJLive.Server.WinForms,JournalViewerForm.cs,ReferenceOnly,"None Include=""JournalViewerForm.cs""","None Include=""JournalViewerForm.cs"""
+EJLive.Server.WinForms,Program.cs,ActiveCompiled,"Compile Include=""Program.cs""","Compile Include=""Program.cs"""
+EJLive.Server.WinForms,PromptTextDialog.cs,ActiveCompiled,"Compile Include=""PromptTextDialog.cs""","Compile Include=""PromptTextDialog.cs"""
+EJLive.Server.WinForms,Properties/AssemblyInfo.cs,ActiveCompiled,"Compile Include=""Properties/AssemblyInfo.cs""","Compile Include=""Properties/AssemblyInfo.cs"""
+EJLive.Server.WinForms,Properties/AssemblyInfo.cs.bak,ReferenceOnly,"None Include=""Properties/*.bak""","None Include=""Properties/*.bak"""
+EJLive.Server.WinForms,ServerMainForm.Designer.cs,ReferenceOnly,"None Include=""*.Designer.cs""","None Include=""*.Designer.cs"""
+EJLive.Server.WinForms,ServerMainForm.bind.cs,ReferenceOnly,"EnableDefaultItems=false, no explicit Compile Include","EnableDefaultItems=false, no explicit Compile Include"
+EJLive.Server.WinForms,ServerMainForm.cs,ActiveCompiled,"Compile Include=""ServerMainForm.cs""","Compile Include=""ServerMainForm.cs"""
+EJLive.Server.WinForms,Services/ArchiveManager.cs,ReferenceOnly,"None Include=""Services/**/*.*""","None Include=""Services/**/*.*"""
+EJLive.Server.WinForms,Services/EJServer.cs,ReferenceOnly,"None Include=""Services/**/*.*""","None Include=""Services/**/*.*"""
+EJLive.Server.WinForms,Services/EJServerService.cs,ReferenceOnly,"None Include=""Services/**/*.*""","None Include=""Services/**/*.*"""
+EJLive.Server.WinForms,Services/UIBinder.cs,ReferenceOnly,"None Include=""Services/**/*.*""","None Include=""Services/**/*.*"""
+EJLive.Server.WinForms,SyncDashboardForm.Designer.cs,ReferenceOnly,"None Include=""*.Designer.cs""","None Include=""*.Designer.cs"""
+EJLive.Server.WinForms,SyncDashboardForm.cs,ReferenceOnly,"None Include=""SyncDashboardForm.cs""","None Include=""SyncDashboardForm.cs"""
+EJLive.Server.WinForms,app.config,ReferenceOnly,"None Include=""app.config""","None Include=""app.config"""
+EJLive.Server.WinForms,obj/EJLive.Server.WinForms.csproj.nuget.dgspec.json,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Server.WinForms,obj/EJLive.Server.WinForms.csproj.nuget.g.props,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Server.WinForms,obj/EJLive.Server.WinForms.csproj.nuget.g.targets,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Server.WinForms,obj/project.assets.json,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Server.WinForms,obj/project.nuget.cache,ActiveContent,Content file in project directory,Content file in project directory
+EJLive.Server.WinForms,packages.config,ReferenceOnly,"None Include=""packages.config""","None Include=""packages.config"""
+EJLive.Shared,App.config,ReferenceOnly,"None Include=""App.config""","None Include=""App.config"""
+EJLive.Shared,AppLogger.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Shared,DateTimeHelper.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Shared,EJLive.Shared.csproj,ActiveContent,Content file,Content file
+EJLive.Shared,EJLive.Shared.csproj.bak,ReferenceOnly,"None Include=""EJLive.Shared.csproj.bak""","None Include=""EJLive.Shared.csproj.bak"""
+EJLive.Shared,LightUiTheme.cs,ReferenceOnly,"Compile Remove=""LightUiTheme.cs""","Compile Remove=""LightUiTheme.cs"""
+EJLive.Shared,Logger.cs,ReferenceOnly,"Compile Remove=""Logger.cs""","Compile Remove=""Logger.cs"""
+EJLive.Shared,MonitoringState.cs,ReferenceOnly,"Compile Remove=""MonitoringState.cs""","Compile Remove=""MonitoringState.cs"""
+EJLive.Shared,MonitoringStateStore.cs,ReferenceOnly,"Compile Remove=""MonitoringStateStore.cs""","Compile Remove=""MonitoringStateStore.cs"""
+EJLive.Shared,Properties/AssemblyInfo.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Shared,Properties/AssemblyInfo.cs.bak,ReferenceOnly,"None Include=""Properties/AssemblyInfo.cs.bak""","None Include=""Properties/AssemblyInfo.cs.bak"""
+EJLive.Shared,RetryPolicy.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Shared,SecurityHelper.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Shared,SecurityHelper.cs.bak,ReferenceOnly,"None Include=""SecurityHelper.cs.bak""","None Include=""SecurityHelper.cs.bak"""
+EJLive.Shared,obj/EJLive.Shared.csproj.nuget.dgspec.json,ActiveContent,Content file,Content file
+EJLive.Shared,obj/EJLive.Shared.csproj.nuget.g.props,ActiveContent,Content file,Content file
+EJLive.Shared,obj/EJLive.Shared.csproj.nuget.g.targets,ActiveContent,Content file,Content file
+EJLive.Shared,obj/project.assets.json,ActiveContent,Content file,Content file
+EJLive.Shared,obj/project.nuget.cache,ActiveContent,Content file,Content file
+EJLive.Shared,packages.config,ReferenceOnly,"None Include=""packages.config""","None Include=""packages.config"""
+EJLive.Tests,ClientV5StartupTests.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Tests,EJLive.Tests.csproj,ActiveContent,Content file,Content file
+EJLive.Tests,RegressionGateTests.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Tests,UnifiedRuntimeTests.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Tests,V5EnhancedDifferenceTests.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Tests,obj/EJLive.Tests.csproj.nuget.dgspec.json,ActiveContent,Content file,Content file
+EJLive.Tests,obj/EJLive.Tests.csproj.nuget.g.props,ActiveContent,Content file,Content file
+EJLive.Tests,obj/EJLive.Tests.csproj.nuget.g.targets,ActiveContent,Content file,Content file
+EJLive.Tests,obj/project.assets.json,ActiveContent,Content file,Content file
+EJLive.Tests,obj/project.nuget.cache,ActiveContent,Content file,Content file
+EJLive.Verification,EJLive.Verification.csproj,ActiveContent,Content file,Content file
+EJLive.Verification,Program.cs,ActiveCompiled,SDK default compile,SDK default compile
+EJLive.Verification,obj/EJLive.Verification.csproj.nuget.dgspec.json,ActiveContent,Content file,Content file
+EJLive.Verification,obj/EJLive.Verification.csproj.nuget.g.props,ActiveContent,Content file,Content file
+EJLive.Verification,obj/EJLive.Verification.csproj.nuget.g.targets,ActiveContent,Content file,Content file
+EJLive.Verification,obj/project.assets.json,ActiveContent,Content file,Content file
+EJLive.Verification,obj/project.nuget.cache,ActiveContent,Content file,Content file
