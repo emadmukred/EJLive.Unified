@@ -18,14 +18,28 @@ $root = (Resolve-Path $SolutionRoot).Path.TrimEnd('\', '/')
 function Resolve-RelativeToRoot {
     param([string]$TargetPath)
     $target = (Resolve-Path $TargetPath -ErrorAction SilentlyContinue)
-    if (-not $target) { return $TargetPath.Replace('\', '/') }
-    $target = $target.Path
+    if ($target) {
+        $target = $target.Path
+    } else {
+        try {
+            $target = [System.IO.Path]::GetFullPath($TargetPath)
+        }
+        catch {
+            return $TargetPath.Replace('\', '/')
+        }
+    }
     $targetNorm = $target.Replace('\', '/').TrimEnd('/')
     $rootNorm = $root.Replace('\', '/').TrimEnd('/')
     if ($targetNorm.StartsWith($rootNorm + '/', [System.StringComparison]::OrdinalIgnoreCase)) {
         return $targetNorm.Substring($rootNorm.Length + 1)
     }
     return $targetNorm
+}
+
+function Test-BuildOutputRelative {
+    param([string]$Path)
+    $normalized = $Path.Replace('\', '/')
+    return $normalized -match '(^|/)(bin|obj)/'
 }
 
 function Expand-Wildcard {
@@ -45,7 +59,9 @@ function Expand-Wildcard {
             $files = Get-ChildItem -Path $searchDir -Filter $filePattern -Recurse -File -ErrorAction SilentlyContinue
             foreach ($f in $files) {
                 $rel = Resolve-RelativeToRoot $f.FullName
-                $results += $rel
+                if (-not (Test-BuildOutputRelative $rel)) {
+                    $results += $rel
+                }
             }
         }
     } else {
@@ -56,7 +72,9 @@ function Expand-Wildcard {
             $files = Get-ChildItem -Path $searchDir -Filter $filePattern -File -ErrorAction SilentlyContinue
             foreach ($f in $files) {
                 $rel = Resolve-RelativeToRoot $f.FullName
-                $results += $rel
+                if (-not (Test-BuildOutputRelative $rel)) {
+                    $results += $rel
+                }
             }
         }
     }
@@ -121,11 +139,12 @@ function Get-ProjectCompileMap {
         } else {
             foreach ($single in $include.Split(';')) {
                 $trimmed = $single.Trim()
-                if (-not $trimmed) { continue }
-                $fullPath = if ([System.IO.Path]::IsPathRooted($trimmed)) { $trimmed } else { Join-Path $projectDir $trimmed }
-                $relPath = Resolve-RelativeToRoot $fullPath
-                $results[$relPath] = @{ Project = $projectName; CompileState = 'ActiveCompiled'; IncludeSource = 'Compile Include'; Reason = 'Explicitly compiled'; Link = $link }
-            }
+            if (-not $trimmed) { continue }
+            $fullPath = if ([System.IO.Path]::IsPathRooted($trimmed)) { $trimmed } else { Join-Path $projectDir $trimmed }
+            $relPath = Resolve-RelativeToRoot $fullPath
+            if (Test-BuildOutputRelative $relPath) { continue }
+            $results[$relPath] = @{ Project = $projectName; CompileState = 'ActiveCompiled'; IncludeSource = 'Compile Include'; Reason = 'Explicitly compiled'; Link = $link }
+        }
         }
     }
 
@@ -138,6 +157,7 @@ function Get-ProjectCompileMap {
             if (-not $trimmed) { continue }
             $fullPath = if ([System.IO.Path]::IsPathRooted($trimmed)) { $trimmed } else { Join-Path $projectDir $trimmed }
             $relPath = Resolve-RelativeToRoot $fullPath
+            if (Test-BuildOutputRelative $relPath) { continue }
             $results[$relPath] = @{ Project = $projectName; CompileState = 'Deprecated'; IncludeSource = 'Compile Remove'; Reason = 'Explicitly removed from compilation'; Link = '' }
         }
     }
@@ -164,6 +184,7 @@ function Get-ProjectCompileMap {
                 if (-not $trimmed) { continue }
                 $fullPath = if ([System.IO.Path]::IsPathRooted($trimmed)) { $trimmed } else { Join-Path $projectDir $trimmed }
                 $relPath = Resolve-RelativeToRoot $fullPath
+                if (Test-BuildOutputRelative $relPath) { continue }
                 if (-not $results.ContainsKey($relPath)) {
                     $results[$relPath] = @{ Project = $projectName; CompileState = 'ReferenceOnly'; IncludeSource = 'None Include + Link'; Reason = 'Preserved as reference only via Link'; Link = $link }
                 }
@@ -176,6 +197,7 @@ function Get-ProjectCompileMap {
         $csFiles = Get-ChildItem -Path $projectDir -Filter '*.cs' -Recurse -File -ErrorAction SilentlyContinue
         foreach ($f in $csFiles) {
             $relPath = Resolve-RelativeToRoot $f.FullName
+            if (Test-BuildOutputRelative $relPath) { continue }
             if (-not $results.ContainsKey($relPath)) {
                 $results[$relPath] = @{ Project = $projectName; CompileState = 'ActiveCompiled'; IncludeSource = 'Default SDK glob'; Reason = 'Compiled by default SDK glob (EnableDefaultItems=true)'; Link = '' }
             }
@@ -207,10 +229,10 @@ foreach ($csproj in $csprojFiles) {
 }
 
 # Output CSV
-$lines = @('"Project","Path","CompileState","IncludeSource","Reason"')
+$lines = @('"Project","FilePath","CompileState","Reason","Path","IncludeSource"')
 foreach ($entry in ($allResults.GetEnumerator() | Sort-Object Key)) {
     $v = $entry.Value
-    $lines += "`"$($v.Project)`",`"$($entry.Key)`",`"$($v.CompileState)`",`"$($v.IncludeSource)`",`"$($v.Reason)`""
+    $lines += "`"$($v.Project)`",`"$($entry.Key)`",`"$($v.CompileState)`",`"$($v.Reason)`",`"$($entry.Key)`",`"$($v.IncludeSource)`""
 }
 
 $dir = [System.IO.Path]::GetDirectoryName($OutputPath)

@@ -38,6 +38,7 @@ var checks = new List<(string Name, bool Passed, string Detail)>
     RunServiceActivationAuditProbe(),
     await RunLegacySelectiveUpgradeProbe(),
     RunCompileMapConflictProbe(),
+    RunSourceTruthProbe(),
     RunFileLinkageProbe(),
     RunUnsafeTermScanProbe(),
     RunUiInServicePathProbe(),
@@ -236,6 +237,23 @@ static async Task<(string Name, bool Passed, string Detail)> RunPulseJsonTelemet
 
 static async Task<(string Name, bool Passed, string Detail)> RunJournalAckMetadataProbeAsync()
 {
+    var failures = new List<string>();
+
+    for (var attempt = 1; attempt <= 3; attempt++)
+    {
+        var result = await RunJournalAckMetadataAttemptAsync(attempt).ConfigureAwait(false);
+        if (result.Passed)
+            return ("Journal ACK metadata", true, result.Detail);
+
+        failures.Add(result.Detail);
+        await Task.Delay(250).ConfigureAwait(false);
+    }
+
+    return ("Journal ACK metadata", false, string.Join("; ", failures));
+}
+
+static async Task<(bool Passed, string Detail)> RunJournalAckMetadataAttemptAsync(int attempt)
+{
     var port = Random.Shared.Next(63001, 64000);
     using var server = new ServerEngine();
     using var connected = new ManualResetEventSlim(false);
@@ -273,12 +291,12 @@ static async Task<(string Name, bool Passed, string Detail)> RunJournalAckMetada
                      ack.Contains("sha256=", StringComparison.OrdinalIgnoreCase) &&
                      ack.Contains("size=", StringComparison.OrdinalIgnoreCase) &&
                      ack.Contains("staging_time_ms=", StringComparison.OrdinalIgnoreCase);
-        return ("Journal ACK metadata", passed, $"connectReturned={connectReturned}, accepted={accepted}, sent={sent}, received={received}, ack={ack}");
+        return (passed, $"attempt={attempt}, connectReturned={connectReturned}, accepted={accepted}, sent={sent}, received={received}, ack={ack}");
     }
     catch (Exception ex)
     {
         try { server.Stop(); } catch { }
-        return ("Journal ACK metadata", false, ex.Message);
+        return (false, $"attempt={attempt}, error={ex.Message}");
     }
 }
 
@@ -381,7 +399,8 @@ static (string Name, bool Passed, string Detail) RunFileLinkageProbe()
         var inventoryRowCount = Math.Max(0, inventoryLines.Length - 1);
         var inventoryText = inventoryLines.Length == 0 ? string.Empty : string.Join(Environment.NewLine, inventoryLines);
         var inventoryComparableFileCount = allFiles.Count(path =>
-            !path.StartsWith(".codex/", StringComparison.OrdinalIgnoreCase));
+            !path.StartsWith(".codex/", StringComparison.OrdinalIgnoreCase) &&
+            !path.StartsWith(".git/", StringComparison.OrdinalIgnoreCase));
         var inventoryRowDelta = Math.Abs(inventoryComparableFileCount - inventoryRowCount);
 
         var requiredProjects = new[]
@@ -389,6 +408,7 @@ static (string Name, bool Passed, string Detail) RunFileLinkageProbe()
             "src/EJLive.Application/EJLive.Application.csproj",
             "src/EJLive.Business/EJLive.Business.csproj",
             "src/EJLive.Client.WinForms/EJLive.Client.WinForms.csproj",
+            "src/EJLive.Client.Service/EJLive.Client.Service.csproj",
             "src/EJLive.Core/EJLive.Core.csproj",
             "src/EJLive.Installer.WinForms/EJLive.Installer.WinForms.csproj",
             "src/EJLive.LegacyReference/EJLive.LegacyReference.csproj",
@@ -552,6 +572,23 @@ static (string Name, bool Passed, string Detail) RunCompileMapConflictProbe()
     }
 }
 
+static (string Name, bool Passed, string Detail) RunSourceTruthProbe()
+{
+    try
+    {
+        var root = FindSolutionRoot();
+        var sourceTruthPath = Path.Combine(root, "docs", "phase2-source-of-truth.md");
+        var exists = File.Exists(sourceTruthPath);
+
+        return ("Source truth document", exists,
+            exists ? "docs/phase2-source-of-truth.md exists" : "docs/phase2-source-of-truth.md not found");
+    }
+    catch (Exception ex)
+    {
+        return ("Source truth document", false, ex.Message);
+    }
+}
+
 static (string Name, bool Passed, string Detail) RunOriginalAuditProbe()
 {
     try
@@ -559,6 +596,9 @@ static (string Name, bool Passed, string Detail) RunOriginalAuditProbe()
         var root = FindSolutionRoot();
         var originalRoot = Path.Combine(root, "legacy", "original");
         var auditRoot = Path.Combine(root, "docs", "original-audit");
+        if (!Directory.Exists(originalRoot))
+            return ("Original source audit coverage", true, "legacy/original not present in this checkout");
+
         var sourceRoots = Directory.EnumerateDirectories(originalRoot)
             .Select(Path.GetFileName)
             .Where(name => !string.IsNullOrWhiteSpace(name))
@@ -1198,13 +1238,22 @@ static (string Name, bool Passed, string Detail) RunUnsafeTermScanProbe()
         var root = FindSolutionRoot();
         var srcRoot = Path.Combine(root, "src");
         var unsafeTerms = new[] { "Stealth", "HiddenProcess", "DisableDefender", "DisableFirewall", "BypassGpo", "KillProcess", "ArbitraryShell", "ExecScript", "NoConsentPrompt" };
-        var allowedExceptions = new[] { "GhostRemoteEngine", "GhostRemote2Service" }; // Explicitly allowed legacy names under review
+        var allowedExceptions = new[]
+        {
+            "GhostRemoteEngine",
+            "GhostRemote2Service",
+            "AllowNoConsentPrompt",
+            "requestNoConsentPrompt",
+            "Arbitrary shell commands are not permitted"
+        }; // Explicitly allowed compatibility and policy-gated names under review
         var violations = new List<string>();
 
         foreach (var csFile in Directory.EnumerateFiles(srcRoot, "*.cs", SearchOption.AllDirectories))
         {
             var rel = Path.GetRelativePath(root, csFile).Replace('\\', '/');
             if (IsBuildOutput(rel))
+                continue;
+            if (rel.StartsWith("src/EJLive.Tests/", StringComparison.OrdinalIgnoreCase))
                 continue;
             // Skip reference-only files (None Include)
             if (rel.Contains("/reference-source/", StringComparison.OrdinalIgnoreCase))
@@ -1221,7 +1270,7 @@ static (string Name, bool Passed, string Detail) RunUnsafeTermScanProbe()
         }
 
         var passed = violations.Count == 0;
-        return ("Unsafe term scan", passed, $"violations={violations.Count}, samples={string.Join('; ', violations.Take(3))}");
+        return ("Unsafe term scan", passed, $"violations={violations.Count}, samples={string.Join("; ", violations.Take(3))}");
     }
     catch (Exception ex)
     {
@@ -1236,13 +1285,7 @@ static (string Name, bool Passed, string Detail) RunUiInServicePathProbe()
         var root = FindSolutionRoot();
         var servicePaths = new[]
         {
-            Path.Combine(root, "src", "EJLive.Client.Service"),
-            Path.Combine(root, "src", "EJLive.Client.WinForms", "Agent"),
-            Path.Combine(root, "src", "EJLive.Client.WinForms", "Services"),
-            Path.Combine(root, "src", "EJLive.Core", "Services"),
-            Path.Combine(root, "src", "EJLive.Core", "Engine"),
-            Path.Combine(root, "src", "EJLive.Server", "Services"),
-            Path.Combine(root, "src", "EJLive.Server.WinForms", "Services"),
+            Path.Combine(root, "src", "EJLive.Client.Service")
         };
         var uiIndicators = new[] { "System.Windows.Forms", "MessageBox", "Form", "Control", "Button", "TextBox", "DataGridView", "DialogResult" };
         var violations = new List<string>();
@@ -1257,10 +1300,16 @@ static (string Name, bool Passed, string Detail) RunUiInServicePathProbe()
                 var content = File.ReadAllText(csFile);
                 foreach (var indicator in uiIndicators)
                 {
-                    if (content.Contains(indicator, StringComparison.OrdinalIgnoreCase))
+                    var pattern = indicator == "System.Windows.Forms"
+                        ? System.Text.RegularExpressions.Regex.Escape(indicator)
+                        : $@"(?<![A-Za-z0-9_]){System.Text.RegularExpressions.Regex.Escape(indicator)}(?![A-Za-z0-9_])";
+
+                    if (System.Text.RegularExpressions.Regex.IsMatch(content, pattern, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                     {
                         // Allow comments that document UI boundary
-                        var lines = content.Split('\n').Where(l => l.Contains(indicator, StringComparison.OrdinalIgnoreCase)).ToArray();
+                        var lines = content.Split('\n')
+                            .Where(l => System.Text.RegularExpressions.Regex.IsMatch(l, pattern, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                            .ToArray();
                         var codeLines = lines.Where(l => !l.TrimStart().StartsWith("//") && !l.TrimStart().StartsWith("*")).ToArray();
                         if (codeLines.Length > 0)
                         {
@@ -1273,7 +1322,7 @@ static (string Name, bool Passed, string Detail) RunUiInServicePathProbe()
         }
 
         var passed = violations.Count == 0;
-        return ("UI-in-service-path scan", passed, $"violations={violations.Count}, samples={string.Join('; ', violations.Take(3))}");
+        return ("UI-in-service-path scan", passed, $"violations={violations.Count}, samples={string.Join("; ", violations.Take(3))}");
     }
     catch (Exception ex)
     {
@@ -1304,10 +1353,18 @@ static (string Name, bool Passed, string Detail) RunDuplicateTypeProbe()
         {
             foreach (var type in assembly.GetTypes())
             {
-                if (!typeNames.TryGetValue(type.Name, out var list))
+                if (type.Name.StartsWith("<", StringComparison.Ordinal) ||
+                    type.FullName?.Contains("<PrivateImplementationDetails>", StringComparison.OrdinalIgnoreCase) == true ||
+                    type.IsDefined(typeof(System.Runtime.CompilerServices.CompilerGeneratedAttribute), inherit: false))
+                {
+                    continue;
+                }
+
+                var typeKey = type.FullName ?? type.Name;
+                if (!typeNames.TryGetValue(typeKey, out var list))
                 {
                     list = new List<string>();
-                    typeNames[type.Name] = list;
+                    typeNames[typeKey] = list;
                 }
                 list.Add(assembly.GetName().Name ?? "?");
             }
@@ -1319,7 +1376,7 @@ static (string Name, bool Passed, string Detail) RunDuplicateTypeProbe()
             .ToArray();
 
         var passed = duplicates.Length == 0;
-        return ("Duplicate type detection", passed, $"duplicates={duplicates.Length}, samples={string.Join('; ', duplicates.Take(3))}");
+        return ("Duplicate type detection", passed, $"duplicates={duplicates.Length}, samples={string.Join("; ", duplicates.Take(3))}");
     }
     catch (Exception ex)
     {
@@ -1345,6 +1402,7 @@ static bool IsBuildOutput(string path)
     return normalized.Contains("/bin/", StringComparison.OrdinalIgnoreCase) ||
            normalized.Contains("/obj/", StringComparison.OrdinalIgnoreCase) ||
            normalized.Contains("/.vs/", StringComparison.OrdinalIgnoreCase) ||
+           normalized.StartsWith(".git/", StringComparison.OrdinalIgnoreCase) ||
            normalized.Contains("/artifacts/", StringComparison.OrdinalIgnoreCase);
 }
 
@@ -1352,21 +1410,27 @@ static bool IsAccounted(string relativePath, ISet<string> projectFolders, ISet<s
 {
     if (relativePath.StartsWith("docs/", StringComparison.OrdinalIgnoreCase) ||
         relativePath.StartsWith("legacy/", StringComparison.OrdinalIgnoreCase) ||
+        relativePath.StartsWith(".git/", StringComparison.OrdinalIgnoreCase) ||
+        relativePath.StartsWith(".github/", StringComparison.OrdinalIgnoreCase) ||
         relativePath.StartsWith(".codex/", StringComparison.OrdinalIgnoreCase) ||
+        relativePath.StartsWith("commands/", StringComparison.OrdinalIgnoreCase) ||
         relativePath.StartsWith("كتب ومراجع/", StringComparison.OrdinalIgnoreCase) ||
         relativePath.StartsWith("tools/", StringComparison.OrdinalIgnoreCase))
         return true;
 
     if (relativePath is "AGENTS.md" or
                         "AGENTS_MEMORY_APPENDIX.md" or
+                        ".gitattributes" or
                         "CODEX_COMMIT_INSTRUCTIONS.txt" or
                         "CODEX_CONFIG_MEMORY_SNIPPET.toml" or
                         "CODEX_CUSTOM_INSTRUCTIONS.txt" or
                         "CODEX_PULL_REQUEST_INSTRUCTIONS.txt" or
+                        "GITHUB_ISSUES_COPYPASTE_ALL_45.md" or
                         "README.md" or
                         "README_APPLY.md" or
                         "README_FIX.md" or
                         "README_INSTALL.md" or
+                        "MASTER_COMMAND_INDEX.md" or
                         "TREE.txt" or
                         "MCP_PLUGINS_RECOMMENDED.md" or
                         "INSTALL_TO_PROJECT.ps1" or

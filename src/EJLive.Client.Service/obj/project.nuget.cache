@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nY2hltbONjs=",
+  "dgSpecHash": "+MK3k6C28/8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Client.Service\\EJLive.Client.Service.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Client.Service\\EJLive.Client.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
@@ -34,9 +34,9 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.118\\stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.1\\system.diagnostics.eventlog.9.0.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.1\\system.diagnostics.eventlog.8.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.serviceprocess.servicecontroller\\9.0.1\\system.serviceprocess.servicecontroller.9.0.1.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\system.serviceprocess.servicecontroller\\8.0.1\\system.serviceprocess.servicecontroller.8.0.1.nupkg.sha512"
   ],
   "logs": []
 }

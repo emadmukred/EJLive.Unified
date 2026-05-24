@@ -29,7 +29,7 @@ public sealed class AgentHealthReporter : IDisposable
 {
     private readonly IAgentController _agent;
     private readonly string? _endpointFilePath;
-    private readonly Timer? _reportTimer;
+    private readonly System.Threading.Timer? _reportTimer;
     private readonly DateTime _startedAt;
     private readonly JsonSerializerOptions _jsonOptions;
     private readonly object _writeLock = new();
@@ -45,7 +45,7 @@ public sealed class AgentHealthReporter : IDisposable
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase
         };
 
-        _reportTimer = new Timer(_ => Publish(), null, interval, interval);
+        _reportTimer = new System.Threading.Timer(_ => Publish(), null, interval, interval);
     }
 
     // Backward-compatible constructor used by older service code.

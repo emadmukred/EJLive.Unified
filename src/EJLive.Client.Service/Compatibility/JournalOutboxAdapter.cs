@@ -19,7 +19,7 @@ internal sealed class JournalOutboxAdapter : IDisposable
     public object Inner => _inner;
 
     public int PendingCount =>
-        ReflectionSafe.GetPropertyValue<int>(_inner, "PendingCount", "Count") ?? 0;
+        ReflectionSafe.GetPropertyValue<int>(_inner, "PendingCount", "Count");
 
     public void EnqueueFile(string atmId, string fileName, byte[] data, string checksum)
     {

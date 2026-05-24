@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EJLive.Verification")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ccaec5d7ddc0dd92f50a6d88917ea5be4e1f4f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("EJLive.Verification")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EJLive.Verification")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

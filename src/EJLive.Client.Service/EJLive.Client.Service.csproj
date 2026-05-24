@@ -1,6 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
   <ItemGroup>
-    <ProjectReference Include="..\EJLive.Client.WinForms\EJLive.Client.WinForms.csproj" />
     <ProjectReference Include="..\EJLive.Core\EJLive.Core.csproj" />
     <ProjectReference Include="..\EJLive.Shared\EJLive.Shared.csproj" />
   </ItemGroup>
@@ -11,7 +10,6 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>EJLive.Client.Service</AssemblyName>
     <RootNamespace>EJLive.Client.Service</RootNamespace>
   </PropertyGroup>

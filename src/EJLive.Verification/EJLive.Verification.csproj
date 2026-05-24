@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\EJLive.Application\EJLive.Application.csproj" />
     <ProjectReference Include="..\EJLive.Business\EJLive.Business.csproj" />
+    <ProjectReference Include="..\EJLive.Client.Service\EJLive.Client.Service.csproj" />
     <ProjectReference Include="..\EJLive.Client.WinForms\EJLive.Client.WinForms.csproj" />
     <ProjectReference Include="..\EJLive.Core\EJLive.Core.csproj" />
     <ProjectReference Include="..\EJLive.Installer.WinForms\EJLive.Installer.WinForms.csproj" />

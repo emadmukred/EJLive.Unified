@@ -7,7 +7,7 @@ param(
 $root = Resolve-Path $SolutionRoot
 $files = Get-ChildItem -Path $root -Recurse -File | Where-Object {
     $path = $_.FullName.Replace('\', '/')
-    -not ($path -like '*/bin/*' -or $path -like '*/obj/*' -or $path -like '*/.vs/*' -or $path -like '*/artifacts/*' -or $path -like '*/.codex/*')
+    -not ($path -like '*/bin/*' -or $path -like '*/obj/*' -or $path -like '*/.vs/*' -or $path -like '*/artifacts/*' -or $path -like '*/.codex/*' -or $path -like '*/.git/*')
 }
 
 function Get-LayerOrArea {
@@ -15,6 +15,8 @@ function Get-LayerOrArea {
     $rel = $relativePath.Replace('\', '/')
     if ($rel.StartsWith('src/')) { return 'Source Code' }
     if ($rel.StartsWith('docs/')) { return 'Documentation' }
+    if ($rel.StartsWith('commands/')) { return 'Task Commands' }
+    if ($rel.StartsWith('.github/')) { return 'GitHub Workflow Metadata' }
     if ($rel.StartsWith('legacy/')) { return 'Reference' }
     if ($rel.StartsWith('tools/')) { return 'Tooling' }
     if ($rel.StartsWith('.codex/')) { return 'Workspace' }
@@ -35,6 +37,12 @@ function Get-FunctionalRole {
     }
     if ($rel.StartsWith('tools/')) {
         return 'Build, verification, or development automation script'
+    }
+    if ($rel.StartsWith('commands/')) {
+        return 'Codex task command definition'
+    }
+    if ($rel.StartsWith('.github/')) {
+        return 'GitHub issue or pull request workflow metadata'
     }
     if ($rel.StartsWith('.codex/')) {
         return 'IDE plugin workspace, memory, or skill configuration'

@@ -15,6 +15,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <!-- Preserve future-track tests as source references until their owning implementation tracks are active. -->
+    <Compile Remove="Track03\**\*.cs;Track04\**\*.cs;Track05\**\*.cs;Track06\**\*.cs;Track07\**\*.cs;Track08\**\*.cs;Track09\**\*.cs;Track10\**\*.cs;Track11\**\*.cs;Track12\**\*.cs;Track13\**\*.cs;Track14\**\*.cs;Track15\**\*.cs;Track16\**\*.cs;Track17\**\*.cs;Track18\**\*.cs;Track19\**\*.cs" />
+    <None Include="Track03\**\*.cs;Track04\**\*.cs;Track05\**\*.cs;Track06\**\*.cs;Track07\**\*.cs;Track08\**\*.cs;Track09\**\*.cs;Track10\**\*.cs;Track11\**\*.cs;Track12\**\*.cs;Track13\**\*.cs;Track14\**\*.cs;Track15\**\*.cs;Track16\**\*.cs;Track17\**\*.cs;Track18\**\*.cs;Track19\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\EJLive.Application\EJLive.Application.csproj" />
     <ProjectReference Include="..\EJLive.Business\EJLive.Business.csproj" />
     <ProjectReference Include="..\EJLive.Client.Service\EJLive.Client.Service.csproj" />

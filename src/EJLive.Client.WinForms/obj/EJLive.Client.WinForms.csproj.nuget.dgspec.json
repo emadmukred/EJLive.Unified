@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Client.WinForms\\EJLive.Client.WinForms.csproj": {}
+    "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Client.WinForms\\EJLive.Client.WinForms.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Client.WinForms\\EJLive.Client.WinForms.csproj": {
+    "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Client.WinForms\\EJLive.Client.WinForms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Client.WinForms\\EJLive.Client.WinForms.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Client.WinForms\\EJLive.Client.WinForms.csproj",
         "projectName": "EJLive.Client",
-        "projectPath": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Client.WinForms\\EJLive.Client.WinForms.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Client.WinForms\\EJLive.Client.WinForms.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Client.WinForms\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Client.WinForms\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Core\\EJLive.Core.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Core\\EJLive.Core.csproj"
+              "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Core\\EJLive.Core.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Core\\EJLive.Core.csproj"
               },
-              "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj"
+              "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Core\\EJLive.Core.csproj": {
+    "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Core\\EJLive.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Core\\EJLive.Core.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Core\\EJLive.Core.csproj",
         "projectName": "EJLive.Core",
-        "projectPath": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Core\\EJLive.Core.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Core\\EJLive.Core.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Core\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -115,8 +115,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj"
+              "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj"
               }
             }
           }
@@ -165,14 +165,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj": {
+    "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj",
         "projectName": "EJLive.Shared",
-        "projectPath": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Shared\\EJLive.Shared.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Shared\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
