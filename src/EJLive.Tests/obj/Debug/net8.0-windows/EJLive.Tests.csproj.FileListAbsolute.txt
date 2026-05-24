@@ -141,3 +141,6 @@ C:\Users\user\Desktop\CodexMarege\CodexMarege\EJLive.Unified\EJLive.Unified\src\
 C:\Users\user\Desktop\CodexMarege\CodexMarege\EJLive.Unified\EJLive.Unified\src\EJLive.Tests\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
 C:\Users\user\Desktop\CodexMarege\CodexMarege\EJLive.Unified\EJLive.Unified\src\EJLive.Tests\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\user\Desktop\CodexMarege\CodexMarege\EJLive.Unified\EJLive.Unified\src\EJLive.Tests\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.ServiceProcess.ServiceController.dll
+C:\Users\user\Desktop\EJLive.Unified\src\EJLive.Tests\obj\Debug\net8.0-windows\EJLive.Tests.dll
+C:\Users\user\Desktop\EJLive.Unified\src\EJLive.Tests\obj\Debug\net8.0-windows\refint\EJLive.Tests.dll
+C:\Users\user\Desktop\EJLive.Unified\src\EJLive.Tests\obj\Debug\net8.0-windows\EJLive.Tests.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nY2hltbONjs=",
+  "dgSpecHash": "RIyBs4q/Z1U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\CodexMarege\\CodexMarege\\EJLive.Unified\\EJLive.Unified\\src\\EJLive.Client.Service\\EJLive.Client.Service.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\EJLive.Unified\\src\\EJLive.Client.Service\\EJLive.Client.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

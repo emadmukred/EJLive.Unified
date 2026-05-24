@@ -61,3 +61,12 @@ C:\Users\user\Desktop\CodexMarege\CodexMarege\EJLive.Unified\EJLive.Unified\src\
 C:\Users\user\Desktop\CodexMarege\CodexMarege\EJLive.Unified\EJLive.Unified\src\EJLive.Verification\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
 C:\Users\user\Desktop\CodexMarege\CodexMarege\EJLive.Unified\EJLive.Unified\src\EJLive.Verification\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\user\Desktop\CodexMarege\CodexMarege\EJLive.Unified\EJLive.Unified\src\EJLive.Verification\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.ServiceProcess.ServiceController.dll
+C:\Users\user\Desktop\EJLive.Unified\src\EJLive.Verification\obj\Debug\net8.0-windows\EJLive.Verification.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\EJLive.Unified\src\EJLive.Verification\obj\Debug\net8.0-windows\EJLive.Verification.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\EJLive.Unified\src\EJLive.Verification\obj\Debug\net8.0-windows\EJLive.Verification.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\EJLive.Unified\src\EJLive.Verification\obj\Debug\net8.0-windows\EJLive.Verification.AssemblyInfo.cs
+C:\Users\user\Desktop\EJLive.Unified\src\EJLive.Verification\obj\Debug\net8.0-windows\EJLive.Verification.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\EJLive.Unified\src\EJLive.Verification\obj\Debug\net8.0-windows\EJLive.Verification.sourcelink.json
+C:\Users\user\Desktop\EJLive.Unified\src\EJLive.Verification\obj\Debug\net8.0-windows\EJLive.Verification.dll
+C:\Users\user\Desktop\EJLive.Unified\src\EJLive.Verification\obj\Debug\net8.0-windows\refint\EJLive.Verification.dll
+C:\Users\user\Desktop\EJLive.Unified\src\EJLive.Verification\obj\Debug\net8.0-windows\EJLive.Verification.pdb

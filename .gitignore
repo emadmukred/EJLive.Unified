@@ -16,3 +16,6 @@ TestResults/
 *.user
 *.suo
 *.rsuser
+
+# Large/local logs
+artifacts/baseline/**/*.binlog

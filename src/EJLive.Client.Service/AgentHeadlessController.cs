@@ -29,8 +29,8 @@ public sealed class AgentHeadlessController : IAgentController
     private readonly BackoffPolicy _reconnectBackoff = new();
 
     private NetworkEngine? _network;
-    private Timer? _heartbeatTimer;
-    private Timer? _reconnectTimer;
+    private System.Threading.Timer? _heartbeatTimer;
+    private System.Threading.Timer? _reconnectTimer;
     private CancellationTokenSource _cts = new();
 
     private AgentControllerState _state = AgentControllerState.Stopped;
@@ -38,8 +38,6 @@ public sealed class AgentHeadlessController : IAgentController
     private DateTime _lastJournalSyncUtc = DateTime.MinValue;
     private string? _lastError;
     private string? _sessionId;
-    private long _totalBytesSent;
-    private long _totalBytesReceived;
     private int _heartbeatBusy;
     private int _reconnectBusy;
 
@@ -70,7 +68,7 @@ public sealed class AgentHeadlessController : IAgentController
         }
 
         EmitStatus();
-        Log($"[AgentHeadless] Starting ATM={AtmId} Type={FirstNonBlank(_config.ATM_TYPE, _config.ATM_Type, "Unknown")}");
+        Log($"[AgentHeadless] Starting ATM={AtmId} Type={FirstNonBlank(_config.ATM_Type, "Unknown")}");
 
         try
         {
@@ -149,8 +147,8 @@ public sealed class AgentHeadlessController : IAgentController
                 Connected: network?.IsConnected ?? false,
                 HandshakeComplete: !string.IsNullOrWhiteSpace(_sessionId),
                 PendingOutboxItems: _outbox.PendingCount,
-                TotalBytesSent: ReadNetworkCounter(network, "TotalBytesSent", _totalBytesSent),
-                TotalBytesReceived: ReadNetworkCounter(network, "TotalBytesReceived", _totalBytesReceived),
+                TotalBytesSent: ReadNetworkCounter(network, "TotalBytesSent", 0),
+                TotalBytesReceived: ReadNetworkCounter(network, "TotalBytesReceived", 0),
                 LastHeartbeatUtc: _lastHeartbeatUtc == DateTime.MinValue ? null : _lastHeartbeatUtc,
                 LastJournalSyncUtc: _lastJournalSyncUtc == DateTime.MinValue ? null : _lastJournalSyncUtc,
                 SessionId: _sessionId,
@@ -186,7 +184,7 @@ public sealed class AgentHeadlessController : IAgentController
             try
             {
                 var root = FirstNonBlank(
-                    AppConstants.DefaultClientDataPath,
+                    Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "EJLive", "Client"),
                     Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "EJLive"));
 
                 var archiveDir = Path.Combine(root, "Archive", DateTime.UtcNow.ToString("yyyy-MM"));
@@ -267,7 +265,7 @@ public sealed class AgentHeadlessController : IAgentController
                     parameters[0].ParameterType == typeof(string) &&
                     parameters[1].ParameterType == typeof(string))
                 {
-                    var source = FirstNonBlank(config.SourcePath, AppConstants.DefaultJournalPath, defaultOutboxPath);
+                    var source = FirstNonBlank(config.SourcePath, AppConstants.GetDefaultSourcePath(config.ATM_Type), defaultOutboxPath);
                     var backup = FirstNonBlank(config.BackupPath, Path.Combine(defaultOutboxPath, "backup"));
                     return ctor.Invoke(new object[] { source, backup });
                 }
@@ -290,10 +288,10 @@ public sealed class AgentHeadlessController : IAgentController
     {
         var transport = NetworkTransportOptions.FromEnvironment();
         _network = new NetworkEngine(
-            FirstNonBlank(_config.ServerHost, _config.ServerIP, "127.0.0.1"),
+            FirstNonBlank(_config.ServerIP, "127.0.0.1"),
             _config.ServerPort,
             AtmId,
-            FirstNonBlank(_config.ATM_TYPE, _config.ATM_Type, "Unknown"),
+            FirstNonBlank(_config.ATM_Type, "Unknown"),
             FirstNonBlank(_config.NetworkType, "LAN"),
             (JournalOutbox)_outbox.Inner,
             transport);
@@ -336,12 +334,7 @@ public sealed class AgentHeadlessController : IAgentController
 
     private void InitializeFileWatcher()
     {
-        var watchRoots =
-            _config.JournalWatchPaths is { Length: > 0 }
-                ? _config.JournalWatchPaths
-                : new[] { FirstNonBlank(AppConstants.DefaultJournalPath, _config.SourcePath, Environment.CurrentDirectory) };
-
-        foreach (var root in watchRoots.Distinct(StringComparer.OrdinalIgnoreCase))
+        foreach (var root in GetConfiguredWatchRoots().Distinct(StringComparer.OrdinalIgnoreCase))
         {
             if (string.IsNullOrWhiteSpace(root) || !Directory.Exists(root))
                 continue;
@@ -359,13 +352,11 @@ public sealed class AgentHeadlessController : IAgentController
     private void StartHeartbeat()
     {
         var interval = TimeSpan.FromSeconds(
-            _config.HeartbeatIntervalSeconds > 0
-                ? _config.HeartbeatIntervalSeconds
-                : _config.HeartbeatSec > 0
-                    ? _config.HeartbeatSec
-                    : 30);
+            _config.HeartbeatIntervalSec > 0
+                ? _config.HeartbeatIntervalSec
+                : AppConstants.HeartbeatIntervalSec);
 
-        _heartbeatTimer = new Timer(
+        _heartbeatTimer = new System.Threading.Timer(
             _ => SendHeartbeatSafely(),
             null,
             TimeSpan.FromSeconds(10),
@@ -374,7 +365,7 @@ public sealed class AgentHeadlessController : IAgentController
 
     private void StartReconnectTimer()
     {
-        _reconnectTimer = new Timer(
+        _reconnectTimer = new System.Threading.Timer(
             _ => AttemptReconnectIfNeeded(),
             null,
             TimeSpan.FromSeconds(15),
@@ -471,11 +462,9 @@ public sealed class AgentHeadlessController : IAgentController
         }
 
         if (type == AppConstants.CMD_SYNC_TIME.ToUpperInvariant())
-            return ExecuteSafe(() =>
-            {
-                TimeSyncScheduler.RunOnce();
-                return new CommandResult(true, "Time synchronization requested.");
-            });
+            return new CommandResult(
+                false,
+                "Time synchronization is not available in the headless service baseline.");
 
         if (type == AppConstants.CMD_GET_STATS.ToUpperInvariant())
             return new CommandResult(true, JsonSerializer.Serialize(GetStatus()));
@@ -598,7 +587,7 @@ public sealed class AgentHeadlessController : IAgentController
     private static long ReadNetworkCounter(NetworkEngine? network, string propertyName, long fallback)
     {
         if (network == null)
-            return Interlocked.Read(ref fallback);
+            return fallback;
 
         try
         {
@@ -613,7 +602,7 @@ public sealed class AgentHeadlessController : IAgentController
         {
         }
 
-        return Interlocked.Read(ref fallback);
+        return fallback;
     }
 
     private static string FirstNonBlank(params string?[] values)
@@ -632,6 +621,13 @@ public sealed class AgentHeadlessController : IAgentController
         yield return Path.Combine(root, "ejlive-client.log");
         yield return Path.Combine(root, "logs", "ejlive-client.log");
         yield return Path.Combine(root, "Agent", "ejlive-client.log");
+    }
+
+    private IEnumerable<string> GetConfiguredWatchRoots()
+    {
+        var configured = FirstNonBlank(_config.SourcePath, AppConstants.GetDefaultSourcePath(_config.ATM_Type), Environment.CurrentDirectory);
+        foreach (var root in configured.Split(new[] { ';', '|' }, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+            yield return root;
     }
 
     private sealed record CommandResult(bool Success, string Message);
