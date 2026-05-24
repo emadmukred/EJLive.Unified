@@ -1,0 +1,21 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+.vs/
+TestResults/
+
+# DotNet artifacts
+*.dll
+*.exe
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+*.cache
+
+# User/local files
+*.user
+*.suo
+*.rsuser
+
+# Large/local logs
+artifacts/baseline/**/*.binlog
