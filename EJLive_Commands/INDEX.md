@@ -1,0 +1,50 @@
+# EJLive Codex Individual Commands
+
+- [[Track 000] Repository Hygiene Gate — Remove Tracked Build Artifacts](000_track-000-repository-hygiene-gate-remove-tracked-build-artifacts.md) — #9
+- [[Track 001] Source Truth and Baseline Gate](001_track-001-source-truth-and-baseline-gate.md) — #3
+- [[Track 002] Active Compile Map Synchronizer](002_track-002-active-compile-map-synchronizer.md) — #4
+- [[Track 003] Client Service Headless Foundation](003_track-003-client-service-headless-foundation.md) — #5
+- [[Track 004] UI Backend Separation Gate](004_track-004-ui-backend-separation-gate.md) — #6
+- [[Track 005] Agent Controller Runtime](005_track-005-agent-controller-runtime.md) — (create/use matching GitHub Issue)
+- [[Track 005A] Client Companion UI Preservation and Safe Service Runtime](005A_track-005a-client-companion-ui-preservation-and-safe-service-runtime.md) — #7
+- [[Track 005B] Unified Client UI, Service Binding, Vendor Paths, and Image Sync](005B_track-005b-unified-client-ui-service-binding-vendor-paths-and-image-syn.md) — #8
+- [[Track 006] Secure Handshake Service](006_track-006-secure-handshake-service.md) — (create/use matching GitHub Issue)
+- [[Track 007] Heartbeat and Pulse Reliability](007_track-007-heartbeat-and-pulse-reliability.md) — (create/use matching GitHub Issue)
+- [[Track 008] Advanced File Watcher and Safe Live File Reader](008_track-008-advanced-file-watcher-and-safe-live-file-reader.md) — (create/use matching GitHub Issue)
+- [[Track 009] Journal Outbox Compatibility Adapter](009_track-009-journal-outbox-compatibility-adapter.md) — (create/use matching GitHub Issue)
+- [[Track 010] Reliable Chunked Transfer Session](010_track-010-reliable-chunked-transfer-session.md) — (create/use matching GitHub Issue)
+- [[Track 011] Server Ingestion Pipeline](011_track-011-server-ingestion-pipeline.md) — (create/use matching GitHub Issue)
+- [[Track 012] EJ Parser Registry and Contracts](012_track-012-ej-parser-registry-and-contracts.md) — (create/use matching GitHub Issue)
+- [[Track 013] NCR EJ Transaction Parser](013_track-013-ncr-ej-transaction-parser.md) — (create/use matching GitHub Issue)
+- [[Track 014] GRG EJ/TRACE Parser](014_track-014-grg-ej-trace-parser.md) — (create/use matching GitHub Issue)
+- [[Track 015] Wincor/ProView EJ Parser Skeleton](015_track-015-wincor-proview-ej-parser-skeleton.md) — (create/use matching GitHub Issue)
+- [[Track 016] Diebold/Agilis EJ Parser Skeleton](016_track-016-diebold-agilis-ej-parser-skeleton.md) — (create/use matching GitHub Issue)
+- [[Track 017] Hyosung EJ Parser Skeleton](017_track-017-hyosung-ej-parser-skeleton.md) — (create/use matching GitHub Issue)
+- [[Track 018] Cash Distribution and Counters Parser](018_track-018-cash-distribution-and-counters-parser.md) — (create/use matching GitHub Issue)
+- [[Track 019] XFS Normalization Contracts](019_track-019-xfs-normalization-contracts.md) — (create/use matching GitHub Issue)
+- [[Track 020] NCR XFS Adapter](020_track-020-ncr-xfs-adapter.md) — (create/use matching GitHub Issue)
+- [[Track 021] GRG XFS Adapter](021_track-021-grg-xfs-adapter.md) — (create/use matching GitHub Issue)
+- [[Track 022] Wincor XFS Adapter](022_track-022-wincor-xfs-adapter.md) — (create/use matching GitHub Issue)
+- [[Track 023] Diebold XFS Adapter](023_track-023-diebold-xfs-adapter.md) — (create/use matching GitHub Issue)
+- [[Track 024] Hyosung XFS Adapter](024_track-024-hyosung-xfs-adapter.md) — (create/use matching GitHub Issue)
+- [[Track 025] EJ XFS TRACE Correlation Engine](025_track-025-ej-xfs-trace-correlation-engine.md) — (create/use matching GitHub Issue)
+- [[Track 026] Safe Remote Command Queue](026_track-026-safe-remote-command-queue.md) — (create/use matching GitHub Issue)
+- [[Track 027] Windows Policy Enforcer Audit Mode](027_track-027-windows-policy-enforcer-audit-mode.md) — (create/use matching GitHub Issue)
+- [[Track 028] RDP Shadow Remote Assistance Governance](028_track-028-rdp-shadow-remote-assistance-governance.md) — (create/use matching GitHub Issue)
+- [[Track 029] File Image Distribution Service](029_track-029-file-image-distribution-service.md) — (create/use matching GitHub Issue)
+- [[Track 030] Screenshot Capture Delivery](030_track-030-screenshot-capture-delivery.md) — (create/use matching GitHub Issue)
+- [[Track 031] Server Dashboard Snapshot Model](031_track-031-server-dashboard-snapshot-model.md) — (create/use matching GitHub Issue)
+- [[Track 032] ATM Vendor Strategy Registry](032_track-032-atm-vendor-strategy-registry.md) — (create/use matching GitHub Issue)
+- [[Track 033] Database Migrations Runner](033_track-033-database-migrations-runner.md) — (create/use matching GitHub Issue)
+- [[Track 034] Structured Logging and Correlation IDs](034_track-034-structured-logging-and-correlation-ids.md) — (create/use matching GitHub Issue)
+- [[Track 035] Security Hardening and Secrets](035_track-035-security-hardening-and-secrets.md) — (create/use matching GitHub Issue)
+- [[Track 036] Local ATM Health Snapshot](036_track-036-local-atm-health-snapshot.md) — (create/use matching GitHub Issue)
+- [[Track 037] Outbox Maintenance and Quota](037_track-037-outbox-maintenance-and-quota.md) — (create/use matching GitHub Issue)
+- [[Track 038] Server Command Retry and Delivery Tracking](038_track-038-server-command-retry-and-delivery-tracking.md) — (create/use matching GitHub Issue)
+- [[Track 039] ATM Journal Request Service](039_track-039-atm-journal-request-service.md) — (create/use matching GitHub Issue)
+- [[Track 040] Time Sync Service](040_track-040-time-sync-service.md) — (create/use matching GitHub Issue)
+- [[Track 041] Installer Deployment Rollback](041_track-041-installer-deployment-rollback.md) — (create/use matching GitHub Issue)
+- [[Track 042] Reference Promotion Protocol](042_track-042-reference-promotion-protocol.md) — (create/use matching GitHub Issue)
+- [[Track 043] NOC Dashboard UI Upgrade After Snapshot](043_track-043-noc-dashboard-ui-upgrade-after-snapshot.md) — (create/use matching GitHub Issue)
+- [[Track 044] Regression Verification Gate](044_track-044-regression-verification-gate.md) — (create/use matching GitHub Issue)
+- [[Track 045] Final Packaging and Release Readiness](045_track-045-final-packaging-and-release-readiness.md) — (create/use matching GitHub Issue)
