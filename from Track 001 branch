@@ -1,0 +1,534 @@
+ .../DesignTimeBuild/.dtbcache.v2                   |  Bin [31m292175[m -> [32m0[m bytes
+ .../6ab684b7-2ddd-4d40-8fa8-ed28dd3f3b8d.vsidx     |  Bin [31m6332131[m -> [32m0[m bytes
+ .../7a4a25ff-1c6c-4c20-b5cf-8b5d4605d60b.vsidx     |  Bin [31m5539195[m -> [32m0[m bytes
+ .../918aacb1-8ed1-41dd-88f3-246e376f34dc.vsidx     |  Bin [31m10165971[m -> [32m0[m bytes
+ .../befb0e68-2b89-4376-a2c7-41ff32704cae.vsidx     |  Bin [31m8806294[m -> [32m0[m bytes
+ .../c54c4b02-d60a-41b0-8166-2194f0b4b0be.vsidx     |  Bin [31m5938682[m -> [32m0[m bytes
+ .../c5e10455-0ab7-4161-9c58-c58262b472fa.vsidx     |  Bin [31m6910299[m -> [32m0[m bytes
+ .vs/EJLive.Unified.slnx/v18/.futdcache.v2          |  Bin [31m2427[m -> [32m0[m bytes
+ .vs/EJLive.Unified.slnx/v18/.suo                   |  Bin [31m59392[m -> [32m0[m bytes
+ .../v18/DocumentLayout.backup.json                 |   12 [31m-[m
+ .vs/EJLive.Unified.slnx/v18/DocumentLayout.json    |   12 [31m-[m
+ .../ejlive.unified.metadata.v10.bin                |  Bin [31m3367[m -> [32m0[m bytes
+ .../ejlive.unified.projects.v10.bin                |  Bin [31m27924[m -> [32m0[m bytes
+ .../ejlive.unified.strings.v10.bin                 |  Bin [31m144008[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Application.deps.json    |  124 [31m--[m
+ .../Debug/net8.0-windows/EJLive.Application.dll    |  Bin [31m15360[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Application.pdb    |  Bin [31m13680[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Business.dll   |  Bin [31m49664[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Business.pdb   |  Bin [31m16820[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Core.dll       |  Bin [31m515584[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Core.dll.config    |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.pdb       |  Bin [31m142836[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Shared.dll     |  Bin [31m20992[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Shared.dll.config  |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Shared.pdb     |  Bin [31m16708[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Application.deps.json    |  124 [31m--[m
+ .../Release/net8.0-windows/EJLive.Application.dll  |  Bin [31m14848[m -> [32m0[m bytes
+ .../Release/net8.0-windows/EJLive.Application.pdb  |  Bin [31m13300[m -> [32m0[m bytes
+ .../bin/Release/net8.0-windows/EJLive.Business.dll |  Bin [31m49152[m -> [32m0[m bytes
+ .../bin/Release/net8.0-windows/EJLive.Business.pdb |  Bin [31m16180[m -> [32m0[m bytes
+ .../bin/Release/net8.0-windows/EJLive.Core.dll     |  Bin [31m494592[m -> [32m0[m bytes
+ .../Release/net8.0-windows/EJLive.Core.dll.config  |   27 [31m-[m
+ .../bin/Release/net8.0-windows/EJLive.Core.pdb     |  Bin [31m115896[m -> [32m0[m bytes
+ .../bin/Release/net8.0-windows/EJLive.Shared.dll   |  Bin [31m19968[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Shared.dll.config        |   27 [31m-[m
+ .../bin/Release/net8.0-windows/EJLive.Shared.pdb   |  Bin [31m15336[m -> [32m0[m bytes
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../Debug/net8.0-windows/EJLive.A.DEC233E9.Up2Date |    0
+ ...ation.GeneratedMSBuildEditorConfig.editorconfig |   18 [31m-[m
+ .../EJLive.Application.GlobalUsings.g.cs           |    8 [31m-[m
+ .../net8.0-windows/EJLive.Application.assets.cache |  Bin [31m3034[m -> [32m0[m bytes
+ ...Live.Application.csproj.AssemblyReference.cache |  Bin [31m4598[m -> [32m0[m bytes
+ ...Live.Application.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ .../EJLive.Application.csproj.FileListAbsolute.txt |   39 [31m-[m
+ .../Debug/net8.0-windows/EJLive.Application.dll    |  Bin [31m15360[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Application.pdb    |  Bin [31m13680[m -> [32m0[m bytes
+ .../EJLive.Application.sourcelink.json             |    1 [31m-[m
+ .../net8.0-windows/ref/EJLive.Application.dll      |  Bin [31m6656[m -> [32m0[m bytes
+ .../net8.0-windows/refint/EJLive.Application.dll   |  Bin [31m6656[m -> [32m0[m bytes
+ .../EJLive.Application.csproj.nuget.dgspec.json    |  308 [31m----[m
+ .../obj/EJLive.Application.csproj.nuget.g.props    |   16 [31m-[m
+ .../obj/EJLive.Application.csproj.nuget.g.targets  |    2 [31m-[m
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../net8.0-windows/EJLive.A.DEC233E9.Up2Date       |    0
+ ...ation.GeneratedMSBuildEditorConfig.editorconfig |   18 [31m-[m
+ .../EJLive.Application.GlobalUsings.g.cs           |    8 [31m-[m
+ .../net8.0-windows/EJLive.Application.assets.cache |  Bin [31m3034[m -> [32m0[m bytes
+ ...Live.Application.csproj.AssemblyReference.cache |  Bin [31m4724[m -> [32m0[m bytes
+ ...Live.Application.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ .../EJLive.Application.csproj.FileListAbsolute.txt |   19 [31m-[m
+ .../Release/net8.0-windows/EJLive.Application.dll  |  Bin [31m14848[m -> [32m0[m bytes
+ .../Release/net8.0-windows/EJLive.Application.pdb  |  Bin [31m13300[m -> [32m0[m bytes
+ .../net8.0-windows/ref/EJLive.Application.dll      |  Bin [31m6656[m -> [32m0[m bytes
+ .../net8.0-windows/refint/EJLive.Application.dll   |  Bin [31m6656[m -> [32m0[m bytes
+ src/EJLive.Application/obj/project.assets.json     |  276 [31m---[m
+ src/EJLive.Application/obj/project.nuget.cache     |   12 [31m-[m
+ .../Debug/net8.0-windows/EJLive.Business.deps.json |  106 [31m--[m
+ .../bin/Debug/net8.0-windows/EJLive.Business.dll   |  Bin [31m49664[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Business.pdb   |  Bin [31m16820[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Core.dll       |  Bin [31m515584[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Core.dll.config    |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.pdb       |  Bin [31m142836[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Shared.dll     |  Bin [31m20992[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Shared.dll.config  |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Shared.pdb     |  Bin [31m16708[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Business.deps.json       |  106 [31m--[m
+ .../bin/Release/net8.0-windows/EJLive.Business.dll |  Bin [31m49152[m -> [32m0[m bytes
+ .../bin/Release/net8.0-windows/EJLive.Business.pdb |  Bin [31m16180[m -> [32m0[m bytes
+ .../bin/Release/net8.0-windows/EJLive.Core.dll     |  Bin [31m494592[m -> [32m0[m bytes
+ .../Release/net8.0-windows/EJLive.Core.dll.config  |   27 [31m-[m
+ .../bin/Release/net8.0-windows/EJLive.Core.pdb     |  Bin [31m115896[m -> [32m0[m bytes
+ .../bin/Release/net8.0-windows/EJLive.Shared.dll   |  Bin [31m19968[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Shared.dll.config        |   27 [31m-[m
+ .../bin/Release/net8.0-windows/EJLive.Shared.pdb   |  Bin [31m15336[m -> [32m0[m bytes
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../Debug/net8.0-windows/EJLive.B.F8E55EFE.Up2Date |    0
+ ...iness.GeneratedMSBuildEditorConfig.editorconfig |   18 [31m-[m
+ .../EJLive.Business.GlobalUsings.g.cs              |    8 [31m-[m
+ .../net8.0-windows/EJLive.Business.assets.cache    |  Bin [31m3034[m -> [32m0[m bytes
+ .../EJLive.Business.csproj.AssemblyReference.cache |  Bin [31m3977[m -> [32m0[m bytes
+ .../EJLive.Business.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ .../EJLive.Business.csproj.FileListAbsolute.txt    |   35 [31m-[m
+ .../obj/Debug/net8.0-windows/EJLive.Business.dll   |  Bin [31m49664[m -> [32m0[m bytes
+ .../obj/Debug/net8.0-windows/EJLive.Business.pdb   |  Bin [31m16820[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Business.sourcelink.json |    1 [31m-[m
+ .../Debug/net8.0-windows/ref/EJLive.Business.dll   |  Bin [31m14336[m -> [32m0[m bytes
+ .../net8.0-windows/refint/EJLive.Business.dll      |  Bin [31m14336[m -> [32m0[m bytes
+ .../obj/EJLive.Business.csproj.nuget.dgspec.json   |  232 [31m---[m
+ .../obj/EJLive.Business.csproj.nuget.g.props       |   16 [31m-[m
+ .../obj/EJLive.Business.csproj.nuget.g.targets     |    2 [31m-[m
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../net8.0-windows/EJLive.B.F8E55EFE.Up2Date       |    0
+ ...iness.GeneratedMSBuildEditorConfig.editorconfig |   18 [31m-[m
+ .../EJLive.Business.GlobalUsings.g.cs              |    8 [31m-[m
+ .../net8.0-windows/EJLive.Business.assets.cache    |  Bin [31m3034[m -> [32m0[m bytes
+ .../EJLive.Business.csproj.AssemblyReference.cache |  Bin [31m4061[m -> [32m0[m bytes
+ .../EJLive.Business.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ .../EJLive.Business.csproj.FileListAbsolute.txt    |   17 [31m-[m
+ .../obj/Release/net8.0-windows/EJLive.Business.dll |  Bin [31m49152[m -> [32m0[m bytes
+ .../obj/Release/net8.0-windows/EJLive.Business.pdb |  Bin [31m16180[m -> [32m0[m bytes
+ .../Release/net8.0-windows/ref/EJLive.Business.dll |  Bin [31m14336[m -> [32m0[m bytes
+ .../net8.0-windows/refint/EJLive.Business.dll      |  Bin [31m14336[m -> [32m0[m bytes
+ src/EJLive.Business/obj/project.assets.json        |  253 [31m---[m
+ src/EJLive.Business/obj/project.nuget.cache        |   12 [31m-[m
+ .../net8.0-windows/EJLive.Client.Service.deps.json |  724 [31m--------[m
+ .../Debug/net8.0-windows/EJLive.Client.Service.dll |  Bin [31m58880[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Client.Service.exe |  Bin [31m152064[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Client.Service.pdb |  Bin [31m28916[m -> [32m0[m bytes
+ .../EJLive.Client.Service.runtimeconfig.json       |   19 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.dll       |  Bin [31m515584[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Core.dll.config    |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.pdb       |  Bin [31m142836[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Shared.dll     |  Bin [31m20992[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Shared.dll.config  |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Shared.pdb     |  Bin [31m16708[m -> [32m0[m bytes
+ ...osoft.Extensions.Configuration.Abstractions.dll |  Bin [31m27936[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Configuration.Binder.dll  |  Bin [31m42784[m -> [32m0[m bytes
+ ...rosoft.Extensions.Configuration.CommandLine.dll |  Bin [31m24736[m -> [32m0[m bytes
+ ...tensions.Configuration.EnvironmentVariables.dll |  Bin [31m21280[m -> [32m0[m bytes
+ ...oft.Extensions.Configuration.FileExtensions.dll |  Bin [31m27936[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Configuration.Json.dll    |  Bin [31m26920[m -> [32m0[m bytes
+ ...rosoft.Extensions.Configuration.UserSecrets.dll |  Bin [31m25384[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Configuration.dll         |  Bin [31m43800[m -> [32m0[m bytes
+ ...Extensions.DependencyInjection.Abstractions.dll |  Bin [31m63768[m -> [32m0[m bytes
+ .../Microsoft.Extensions.DependencyInjection.dll   |  Bin [31m92952[m -> [32m0[m bytes
+ ...crosoft.Extensions.Diagnostics.Abstractions.dll |  Bin [31m30480[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Diagnostics.dll           |  Bin [31m35592[m -> [32m0[m bytes
+ ...osoft.Extensions.FileProviders.Abstractions.dll |  Bin [31m22176[m -> [32m0[m bytes
+ ...Microsoft.Extensions.FileProviders.Physical.dll |  Bin [31m44808[m -> [32m0[m bytes
+ .../Microsoft.Extensions.FileSystemGlobbing.dll    |  Bin [31m45848[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Hosting.Abstractions.dll  |  Bin [31m51472[m -> [32m0[m bytes
+ ...icrosoft.Extensions.Hosting.WindowsServices.dll |  Bin [31m29872[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Hosting.dll               |  Bin [31m72488[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Logging.Abstractions.dll  |  Bin [31m65320[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Logging.Configuration.dll |  Bin [31m27912[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Logging.Console.dll       |  Bin [31m71464[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Logging.Debug.dll         |  Bin [31m20248[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Logging.EventLog.dll      |  Bin [31m25760[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Logging.EventSource.dll   |  Bin [31m34568[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Logging.dll               |  Bin [31m50976[m -> [32m0[m bytes
+ ....Extensions.Options.ConfigurationExtensions.dll |  Bin [31m22688[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Options.dll               |  Bin [31m64776[m -> [32m0[m bytes
+ .../Microsoft.Extensions.Primitives.dll            |  Bin [31m43680[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/System.Data.SQLite.dll    |  Bin [31m427696[m -> [32m0[m bytes
+ .../net8.0-windows/System.Diagnostics.EventLog.dll |  Bin [31m51992[m -> [32m0[m bytes
+ .../System.ServiceProcess.ServiceController.dll    |  Bin [31m33440[m -> [32m0[m bytes
+ .../runtimes/linux-x64/native/SQLite.Interop.dll   |  Bin [31m2982112[m -> [32m0[m bytes
+ .../runtimes/osx-x64/native/SQLite.Interop.dll     |  Bin [31m2150084[m -> [32m0[m bytes
+ .../runtimes/win-x64/native/SQLite.Interop.dll     |  Bin [31m1829040[m -> [32m0[m bytes
+ .../runtimes/win-x86/native/SQLite.Interop.dll     |  Bin [31m1447600[m -> [32m0[m bytes
+ .../win/lib/net8.0/System.Diagnostics.EventLog.dll |  Bin [31m172704[m -> [32m0[m bytes
+ .../System.ServiceProcess.ServiceController.dll    |  Bin [31m87728[m -> [32m0[m bytes
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../Debug/net8.0-windows/EJLive.C.017B2C2A.Up2Date |    0
+ .../EJLive.Client.Service.AssemblyInfo.cs          |   24 [31m-[m
+ .../EJLive.Client.Service.AssemblyInfoInputs.cache |    1 [31m-[m
+ ...rvice.GeneratedMSBuildEditorConfig.editorconfig |   18 [31m-[m
+ .../EJLive.Client.Service.GlobalUsings.g.cs        |   12 [31m-[m
+ .../EJLive.Client.Service.assets.cache             |  Bin [31m25487[m -> [32m0[m bytes
+ ...e.Client.Service.csproj.AssemblyReference.cache |  Bin [31m19609[m -> [32m0[m bytes
+ ...e.Client.Service.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ ...Live.Client.Service.csproj.FileListAbsolute.txt |  126 [31m--[m
+ .../Debug/net8.0-windows/EJLive.Client.Service.dll |  Bin [31m58880[m -> [32m0[m bytes
+ .../EJLive.Client.Service.genruntimeconfig.cache   |    1 [31m-[m
+ .../Debug/net8.0-windows/EJLive.Client.Service.pdb |  Bin [31m28916[m -> [32m0[m bytes
+ .../EJLive.Client.Service.sourcelink.json          |    1 [31m-[m
+ .../obj/Debug/net8.0-windows/apphost.exe           |  Bin [31m152064[m -> [32m0[m bytes
+ .../net8.0-windows/ref/EJLive.Client.Service.dll   |  Bin [31m16384[m -> [32m0[m bytes
+ .../refint/EJLive.Client.Service.dll               |  Bin [31m16384[m -> [32m0[m bytes
+ .../EJLive.Client.Service.csproj.nuget.dgspec.json |  238 [31m---[m
+ .../obj/EJLive.Client.Service.csproj.nuget.g.props |   19 [31m-[m
+ .../EJLive.Client.Service.csproj.nuget.g.targets   |    9 [31m-[m
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../net8.0-windows/EJLive.C.017B2C2A.Up2Date       |    0
+ .../EJLive.Client.Service.AssemblyInfo.cs          |   24 [31m-[m
+ .../EJLive.Client.Service.AssemblyInfoInputs.cache |    1 [31m-[m
+ ...rvice.GeneratedMSBuildEditorConfig.editorconfig |   24 [31m-[m
+ .../EJLive.Client.Service.GlobalUsings.g.cs        |   14 [31m-[m
+ .../EJLive.Client.Service.assets.cache             |  Bin [31m25493[m -> [32m0[m bytes
+ ...e.Client.Service.csproj.AssemblyReference.cache |  Bin [31m22834[m -> [32m0[m bytes
+ ...e.Client.Service.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ ...Live.Client.Service.csproj.FileListAbsolute.txt |   66 [31m-[m
+ .../net8.0-windows/EJLive.Client.Service.dll       |  Bin [31m13312[m -> [32m0[m bytes
+ .../EJLive.Client.Service.genruntimeconfig.cache   |    1 [31m-[m
+ .../net8.0-windows/EJLive.Client.Service.pdb       |  Bin [31m15948[m -> [32m0[m bytes
+ .../obj/Release/net8.0-windows/apphost.exe         |  Bin [31m151552[m -> [32m0[m bytes
+ .../net8.0-windows/ref/EJLive.Client.Service.dll   |  Bin [31m7168[m -> [32m0[m bytes
+ .../refint/EJLive.Client.Service.dll               |  Bin [31m7168[m -> [32m0[m bytes
+ src/EJLive.Client.Service/obj/project.assets.json  | 1905 [31m--------------------[m
+ src/EJLive.Client.Service/obj/project.nuget.cache  |   42 [31m-[m
+ .../Debug/net8.0-windows/EJLive.Client.deps.json   |  162 [31m--[m
+ .../bin/Debug/net8.0-windows/EJLive.Client.dll     |  Bin [31m353792[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Client.dll.config  |   21 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Client.exe     |  Bin [31m152064[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Client.pdb     |  Bin [31m122304[m -> [32m0[m bytes
+ .../EJLive.Client.runtimeconfig.json               |   18 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.dll       |  Bin [31m515584[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Core.dll.config    |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.pdb       |  Bin [31m142836[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Shared.dll     |  Bin [31m20992[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Shared.dll.config  |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Shared.pdb     |  Bin [31m16708[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/System.Data.SQLite.dll    |  Bin [31m427696[m -> [32m0[m bytes
+ .../net8.0-windows/System.Diagnostics.EventLog.dll |  Bin [31m52520[m -> [32m0[m bytes
+ .../System.ServiceProcess.ServiceController.dll    |  Bin [31m34088[m -> [32m0[m bytes
+ .../runtimes/linux-x64/native/SQLite.Interop.dll   |  Bin [31m2982112[m -> [32m0[m bytes
+ .../runtimes/osx-x64/native/SQLite.Interop.dll     |  Bin [31m2150084[m -> [32m0[m bytes
+ .../runtimes/win-x64/native/SQLite.Interop.dll     |  Bin [31m1829040[m -> [32m0[m bytes
+ .../runtimes/win-x86/native/SQLite.Interop.dll     |  Bin [31m1447600[m -> [32m0[m bytes
+ .../System.Diagnostics.EventLog.Messages.dll       |  Bin [31m801064[m -> [32m0[m bytes
+ .../win/lib/net8.0/System.Diagnostics.EventLog.dll |  Bin [31m173864[m -> [32m0[m bytes
+ .../System.ServiceProcess.ServiceController.dll    |  Bin [31m90416[m -> [32m0[m bytes
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../Debug/net8.0-windows/EJLive.C.2BC48763.Up2Date |    0
+ ...Forms.GeneratedMSBuildEditorConfig.editorconfig |   24 [31m-[m
+ .../EJLive.Client.WinForms.GlobalUsings.g.cs       |   10 [31m-[m
+ .../EJLive.Client.WinForms.assets.cache            |  Bin [31m5505[m -> [32m0[m bytes
+ ....Client.WinForms.csproj.AssemblyReference.cache |  Bin [31m4994[m -> [32m0[m bytes
+ ....Client.WinForms.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ ...ive.Client.WinForms.csproj.FileListAbsolute.txt |   63 [31m-[m
+ .../EJLive.Client.WinForms.genruntimeconfig.cache  |    1 [31m-[m
+ .../EJLive.Client.WinForms.sourcelink.json         |    1 [31m-[m
+ .../obj/Debug/net8.0-windows/EJLive.Client.dll     |  Bin [31m353792[m -> [32m0[m bytes
+ .../obj/Debug/net8.0-windows/EJLive.Client.pdb     |  Bin [31m122304[m -> [32m0[m bytes
+ .../obj/Debug/net8.0-windows/apphost.exe           |  Bin [31m152064[m -> [32m0[m bytes
+ .../obj/Debug/net8.0-windows/ref/EJLive.Client.dll |  Bin [31m65536[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/refint/EJLive.Client.dll  |  Bin [31m65536[m -> [32m0[m bytes
+ ...EJLive.Client.WinForms.csproj.nuget.dgspec.json |  241 [31m---[m
+ .../EJLive.Client.WinForms.csproj.nuget.g.props    |   16 [31m-[m
+ .../EJLive.Client.WinForms.csproj.nuget.g.targets  |    2 [31m-[m
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../net8.0-windows/EJLive.C.2BC48763.Up2Date       |    0
+ ...Forms.GeneratedMSBuildEditorConfig.editorconfig |   24 [31m-[m
+ .../EJLive.Client.WinForms.GlobalUsings.g.cs       |   10 [31m-[m
+ .../EJLive.Client.WinForms.assets.cache            |  Bin [31m5505[m -> [32m0[m bytes
+ ....Client.WinForms.csproj.AssemblyReference.cache |  Bin [31m5078[m -> [32m0[m bytes
+ ....Client.WinForms.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ ...ive.Client.WinForms.csproj.FileListAbsolute.txt |   31 [31m-[m
+ .../EJLive.Client.WinForms.genruntimeconfig.cache  |    1 [31m-[m
+ .../obj/Release/net8.0-windows/EJLive.Client.dll   |  Bin [31m335360[m -> [32m0[m bytes
+ .../obj/Release/net8.0-windows/EJLive.Client.pdb   |  Bin [31m95128[m -> [32m0[m bytes
+ .../obj/Release/net8.0-windows/apphost.exe         |  Bin [31m152064[m -> [32m0[m bytes
+ .../Release/net8.0-windows/ref/EJLive.Client.dll   |  Bin [31m66048[m -> [32m0[m bytes
+ .../net8.0-windows/refint/EJLive.Client.dll        |  Bin [31m66048[m -> [32m0[m bytes
+ src/EJLive.Client.WinForms/obj/project.assets.json |  380 [31m----[m
+ src/EJLive.Client.WinForms/obj/project.nuget.cache |   14 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.deps.json |   89 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.dll       |  Bin [31m515584[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Core.dll.config    |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.pdb       |  Bin [31m142836[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Shared.dll     |  Bin [31m20992[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Shared.dll.config  |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Shared.pdb     |  Bin [31m16708[m -> [32m0[m bytes
+ .../Release/net8.0-windows/EJLive.Core.deps.json   |   89 [31m-[m
+ .../bin/Release/net8.0-windows/EJLive.Core.dll     |  Bin [31m494592[m -> [32m0[m bytes
+ .../Release/net8.0-windows/EJLive.Core.dll.config  |   27 [31m-[m
+ .../bin/Release/net8.0-windows/EJLive.Core.pdb     |  Bin [31m115896[m -> [32m0[m bytes
+ .../bin/Release/net8.0-windows/EJLive.Shared.dll   |  Bin [31m19968[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Shared.dll.config        |   27 [31m-[m
+ .../bin/Release/net8.0-windows/EJLive.Shared.pdb   |  Bin [31m15336[m -> [32m0[m bytes
+ ...NETFramework,Version=v4.8.AssemblyAttributes.cs |    4 [31m-[m
+ .../DesignTimeResolveAssemblyReferencesInput.cache |  Bin [31m2086[m -> [32m0[m bytes
+ .../EJLive.Core.csproj.AssemblyReference.cache     |  Bin [31m6784[m -> [32m0[m bytes
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../Debug/net8.0-windows/EJLive.C.14DA47FF.Up2Date |    0
+ ....Core.GeneratedMSBuildEditorConfig.editorconfig |   24 [31m-[m
+ .../net8.0-windows/EJLive.Core.GlobalUsings.g.cs   |   10 [31m-[m
+ .../Debug/net8.0-windows/EJLive.Core.assets.cache  |  Bin [31m3208[m -> [32m0[m bytes
+ .../EJLive.Core.csproj.AssemblyReference.cache     |  Bin [31m1423[m -> [32m0[m bytes
+ .../EJLive.Core.csproj.BuildWithSkipAnalyzers      |    0
+ .../EJLive.Core.csproj.CoreCompileInputs.cache     |    1 [31m-[m
+ .../EJLive.Core.csproj.FileListAbsolute.txt        |   46 [31m-[m
+ .../obj/Debug/net8.0-windows/EJLive.Core.dll       |  Bin [31m515584[m -> [32m0[m bytes
+ .../obj/Debug/net8.0-windows/EJLive.Core.pdb       |  Bin [31m142836[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Core.sourcelink.json     |    1 [31m-[m
+ .../obj/Debug/net8.0-windows/ref/EJLive.Core.dll   |  Bin [31m151040[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/refint/EJLive.Core.dll    |  Bin [31m151040[m -> [32m0[m bytes
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../obj/Debug/net8.0/EJLive.Core.AssemblyInfo.cs   |   23 [31m-[m
+ .../net8.0/EJLive.Core.AssemblyInfoInputs.cache    |    1 [31m-[m
+ ....Core.GeneratedMSBuildEditorConfig.editorconfig |   17 [31m-[m
+ .../obj/Debug/net8.0/EJLive.Core.GlobalUsings.g.cs |    8 [31m-[m
+ .../obj/Debug/net8.0/EJLive.Core.assets.cache      |  Bin [31m2724[m -> [32m0[m bytes
+ .../EJLive.Core.csproj.AssemblyReference.cache     |  Bin [31m669[m -> [32m0[m bytes
+ .../obj/EJLive.Core.csproj.nuget.dgspec.json       |  159 [31m--[m
+ .../obj/EJLive.Core.csproj.nuget.g.props           |   16 [31m-[m
+ .../obj/EJLive.Core.csproj.nuget.g.targets         |    2 [31m-[m
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../net8.0-windows/EJLive.C.14DA47FF.Up2Date       |    0
+ ....Core.GeneratedMSBuildEditorConfig.editorconfig |   24 [31m-[m
+ .../net8.0-windows/EJLive.Core.GlobalUsings.g.cs   |   10 [31m-[m
+ .../net8.0-windows/EJLive.Core.assets.cache        |  Bin [31m3208[m -> [32m0[m bytes
+ .../EJLive.Core.csproj.AssemblyReference.cache     |  Bin [31m1465[m -> [32m0[m bytes
+ .../EJLive.Core.csproj.CoreCompileInputs.cache     |    1 [31m-[m
+ .../EJLive.Core.csproj.FileListAbsolute.txt        |   30 [31m-[m
+ .../obj/Release/net8.0-windows/EJLive.Core.dll     |  Bin [31m494592[m -> [32m0[m bytes
+ .../obj/Release/net8.0-windows/EJLive.Core.pdb     |  Bin [31m115896[m -> [32m0[m bytes
+ .../obj/Release/net8.0-windows/ref/EJLive.Core.dll |  Bin [31m151552[m -> [32m0[m bytes
+ .../Release/net8.0-windows/refint/EJLive.Core.dll  |  Bin [31m151552[m -> [32m0[m bytes
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../obj/Release/net8.0/EJLive.Core.AssemblyInfo.cs |   23 [31m-[m
+ .../net8.0/EJLive.Core.AssemblyInfoInputs.cache    |    1 [31m-[m
+ ....Core.GeneratedMSBuildEditorConfig.editorconfig |   17 [31m-[m
+ .../Release/net8.0/EJLive.Core.GlobalUsings.g.cs   |    8 [31m-[m
+ .../obj/Release/net8.0/EJLive.Core.assets.cache    |  Bin [31m2724[m -> [32m0[m bytes
+ .../EJLive.Core.csproj.AssemblyReference.cache     |  Bin [31m669[m -> [32m0[m bytes
+ src/EJLive.Core/obj/project.assets.json            |  237 [31m---[m
+ src/EJLive.Core/obj/project.nuget.cache            |   12 [31m-[m
+ .../Debug/net8.0-windows/EJLive.Client.deps.json   |  162 [31m--[m
+ .../bin/Debug/net8.0-windows/EJLive.Client.dll     |  Bin [31m353792[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Client.dll.config  |   21 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Client.exe     |  Bin [31m152064[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Client.pdb     |  Bin [31m122304[m -> [32m0[m bytes
+ .../EJLive.Client.runtimeconfig.json               |   18 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.dll       |  Bin [31m515584[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Core.dll.config    |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.pdb       |  Bin [31m142836[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Installer.deps.json      |  193 [31m--[m
+ .../bin/Debug/net8.0-windows/EJLive.Installer.dll  |  Bin [31m56832[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Installer.dll.config     |   14 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Installer.exe  |  Bin [31m152064[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Installer.pdb  |  Bin [31m28704[m -> [32m0[m bytes
+ .../EJLive.Installer.runtimeconfig.json            |   18 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Shared.dll     |  Bin [31m20992[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Shared.dll.config  |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Shared.pdb     |  Bin [31m16708[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/System.Data.SQLite.dll    |  Bin [31m427696[m -> [32m0[m bytes
+ .../net8.0-windows/System.Diagnostics.EventLog.dll |  Bin [31m52520[m -> [32m0[m bytes
+ .../System.ServiceProcess.ServiceController.dll    |  Bin [31m34088[m -> [32m0[m bytes
+ .../runtimes/linux-x64/native/SQLite.Interop.dll   |  Bin [31m2982112[m -> [32m0[m bytes
+ .../runtimes/osx-x64/native/SQLite.Interop.dll     |  Bin [31m2150084[m -> [32m0[m bytes
+ .../runtimes/win-x64/native/SQLite.Interop.dll     |  Bin [31m1829040[m -> [32m0[m bytes
+ .../runtimes/win-x86/native/SQLite.Interop.dll     |  Bin [31m1447600[m -> [32m0[m bytes
+ .../System.Diagnostics.EventLog.Messages.dll       |  Bin [31m801064[m -> [32m0[m bytes
+ .../win/lib/net8.0/System.Diagnostics.EventLog.dll |  Bin [31m173864[m -> [32m0[m bytes
+ .../System.ServiceProcess.ServiceController.dll    |  Bin [31m90416[m -> [32m0[m bytes
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../Debug/net8.0-windows/EJLive.I.21B208FE.Up2Date |    0
+ ...Forms.GeneratedMSBuildEditorConfig.editorconfig |   24 [31m-[m
+ .../EJLive.Installer.WinForms.GlobalUsings.g.cs    |   10 [31m-[m
+ .../EJLive.Installer.WinForms.assets.cache         |  Bin [31m5281[m -> [32m0[m bytes
+ ...staller.WinForms.csproj.AssemblyReference.cache |  Bin [31m8036[m -> [32m0[m bytes
+ ...staller.WinForms.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ ....Installer.WinForms.csproj.FileListAbsolute.txt |   75 [31m-[m
+ ...JLive.Installer.WinForms.genruntimeconfig.cache |    1 [31m-[m
+ .../EJLive.Installer.WinForms.sourcelink.json      |    1 [31m-[m
+ .../obj/Debug/net8.0-windows/EJLive.Installer.dll  |  Bin [31m56832[m -> [32m0[m bytes
+ .../obj/Debug/net8.0-windows/EJLive.Installer.pdb  |  Bin [31m28704[m -> [32m0[m bytes
+ .../obj/Debug/net8.0-windows/apphost.exe           |  Bin [31m152064[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/ref/EJLive.Installer.dll  |  Bin [31m9216[m -> [32m0[m bytes
+ .../net8.0-windows/refint/EJLive.Installer.dll     |  Bin [31m9216[m -> [32m0[m bytes
+ ...ive.Installer.WinForms.csproj.nuget.dgspec.json |  320 [31m----[m
+ .../EJLive.Installer.WinForms.csproj.nuget.g.props |   16 [31m-[m
+ ...JLive.Installer.WinForms.csproj.nuget.g.targets |    2 [31m-[m
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../net8.0-windows/EJLive.I.21B208FE.Up2Date       |    0
+ ...Forms.GeneratedMSBuildEditorConfig.editorconfig |   24 [31m-[m
+ .../EJLive.Installer.WinForms.GlobalUsings.g.cs    |   10 [31m-[m
+ .../EJLive.Installer.WinForms.assets.cache         |  Bin [31m5281[m -> [32m0[m bytes
+ ...staller.WinForms.csproj.AssemblyReference.cache |  Bin [31m8162[m -> [32m0[m bytes
+ ...staller.WinForms.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ ....Installer.WinForms.csproj.FileListAbsolute.txt |   37 [31m-[m
+ ...JLive.Installer.WinForms.genruntimeconfig.cache |    1 [31m-[m
+ .../Release/net8.0-windows/EJLive.Installer.dll    |  Bin [31m54272[m -> [32m0[m bytes
+ .../Release/net8.0-windows/EJLive.Installer.pdb    |  Bin [31m24872[m -> [32m0[m bytes
+ .../obj/Release/net8.0-windows/apphost.exe         |  Bin [31m152064[m -> [32m0[m bytes
+ .../net8.0-windows/ref/EJLive.Installer.dll        |  Bin [31m9216[m -> [32m0[m bytes
+ .../net8.0-windows/refint/EJLive.Installer.dll     |  Bin [31m9216[m -> [32m0[m bytes
+ .../obj/project.assets.json                        |  400 [31m----[m
+ .../obj/project.nuget.cache                        |   14 [31m-[m
+ .../Debug/net8.0/EJLive.LegacyReference.deps.json  |   23 [31m-[m
+ .../bin/Debug/net8.0/EJLive.LegacyReference.dll    |  Bin [31m3584[m -> [32m0[m bytes
+ .../Debug/net8.0/EJLive.LegacyReference.dll.config |   27 [31m-[m
+ .../bin/Debug/net8.0/EJLive.LegacyReference.pdb    |  Bin [31m10460[m -> [32m0[m bytes
+ .../net8.0/EJLive.LegacyReference.deps.json        |   23 [31m-[m
+ .../bin/Release/net8.0/EJLive.LegacyReference.dll  |  Bin [31m4096[m -> [32m0[m bytes
+ .../net8.0/EJLive.LegacyReference.dll.config       |   27 [31m-[m
+ .../bin/Release/net8.0/EJLive.LegacyReference.pdb  |  Bin [31m10288[m -> [32m0[m bytes
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ ...rence.GeneratedMSBuildEditorConfig.editorconfig |   17 [31m-[m
+ .../net8.0/EJLive.LegacyReference.assets.cache     |  Bin [31m227[m -> [32m0[m bytes
+ ....LegacyReference.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ ...ive.LegacyReference.csproj.FileListAbsolute.txt |   21 [31m-[m
+ .../obj/Debug/net8.0/EJLive.LegacyReference.dll    |  Bin [31m3584[m -> [32m0[m bytes
+ .../obj/Debug/net8.0/EJLive.LegacyReference.pdb    |  Bin [31m10460[m -> [32m0[m bytes
+ .../net8.0/EJLive.LegacyReference.sourcelink.json  |    1 [31m-[m
+ .../Debug/net8.0/ref/EJLive.LegacyReference.dll    |  Bin [31m4608[m -> [32m0[m bytes
+ .../Debug/net8.0/refint/EJLive.LegacyReference.dll |  Bin [31m4608[m -> [32m0[m bytes
+ ...EJLive.LegacyReference.csproj.nuget.dgspec.json |   77 [31m-[m
+ .../EJLive.LegacyReference.csproj.nuget.g.props    |   16 [31m-[m
+ .../EJLive.LegacyReference.csproj.nuget.g.targets  |    2 [31m-[m
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ ...rence.GeneratedMSBuildEditorConfig.editorconfig |   17 [31m-[m
+ .../net8.0/EJLive.LegacyReference.assets.cache     |  Bin [31m227[m -> [32m0[m bytes
+ ....LegacyReference.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ ...ive.LegacyReference.csproj.FileListAbsolute.txt |   10 [31m-[m
+ .../obj/Release/net8.0/EJLive.LegacyReference.dll  |  Bin [31m4096[m -> [32m0[m bytes
+ .../obj/Release/net8.0/EJLive.LegacyReference.pdb  |  Bin [31m10288[m -> [32m0[m bytes
+ .../Release/net8.0/ref/EJLive.LegacyReference.dll  |  Bin [31m4608[m -> [32m0[m bytes
+ .../net8.0/refint/EJLive.LegacyReference.dll       |  Bin [31m4608[m -> [32m0[m bytes
+ src/EJLive.LegacyReference/obj/project.assets.json |   83 [31m-[m
+ src/EJLive.LegacyReference/obj/project.nuget.cache |    8 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.dll       |  Bin [31m515584[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Core.dll.config    |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.pdb       |  Bin [31m142836[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Monitor.Legacy.deps.json |  106 [31m--[m
+ .../Debug/net8.0-windows/EJLive.Monitor.Legacy.dll |  Bin [31m27648[m -> [32m0[m bytes
+ .../EJLive.Monitor.Legacy.dll.config               |   27 [31m-[m
+ .../Debug/net8.0-windows/EJLive.Monitor.Legacy.pdb |  Bin [31m19028[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Shared.dll     |  Bin [31m20992[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Shared.dll.config  |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Shared.pdb     |  Bin [31m16708[m -> [32m0[m bytes
+ .../bin/Release/net8.0-windows/EJLive.Core.dll     |  Bin [31m494592[m -> [32m0[m bytes
+ .../Release/net8.0-windows/EJLive.Core.dll.config  |   27 [31m-[m
+ .../bin/Release/net8.0-windows/EJLive.Core.pdb     |  Bin [31m115896[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Monitor.Legacy.deps.json |  106 [31m--[m
+ .../net8.0-windows/EJLive.Monitor.Legacy.dll       |  Bin [31m26624[m -> [32m0[m bytes
+ .../EJLive.Monitor.Legacy.dll.config               |   27 [31m-[m
+ .../net8.0-windows/EJLive.Monitor.Legacy.pdb       |  Bin [31m17708[m -> [32m0[m bytes
+ .../bin/Release/net8.0-windows/EJLive.Shared.dll   |  Bin [31m19968[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Shared.dll.config        |   27 [31m-[m
+ .../bin/Release/net8.0-windows/EJLive.Shared.pdb   |  Bin [31m15336[m -> [32m0[m bytes
+ ...NETFramework,Version=v4.8.AssemblyAttributes.cs |    4 [31m-[m
+ .../DesignTimeResolveAssemblyReferencesInput.cache |  Bin [31m1694[m -> [32m0[m bytes
+ .../EJLive.Monitor.csproj.AssemblyReference.cache  |  Bin [31m4040[m -> [32m0[m bytes
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../Debug/net8.0-windows/EJLive.M.A7766C36.Up2Date |    0
+ ...nitor.GeneratedMSBuildEditorConfig.editorconfig |   24 [31m-[m
+ .../EJLive.Monitor.GlobalUsings.g.cs               |   10 [31m-[m
+ .../Debug/net8.0-windows/EJLive.Monitor.Legacy.dll |  Bin [31m27648[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Monitor.Legacy.pdb |  Bin [31m19028[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Monitor.assets.cache     |  Bin [31m3034[m -> [32m0[m bytes
+ .../EJLive.Monitor.csproj.AssemblyReference.cache  |  Bin [31m3977[m -> [32m0[m bytes
+ .../EJLive.Monitor.csproj.CoreCompileInputs.cache  |    1 [31m-[m
+ .../EJLive.Monitor.csproj.FileListAbsolute.txt     |   37 [31m-[m
+ .../net8.0-windows/EJLive.Monitor.sourcelink.json  |    1 [31m-[m
+ .../net8.0-windows/ref/EJLive.Monitor.Legacy.dll   |  Bin [31m6144[m -> [32m0[m bytes
+ .../refint/EJLive.Monitor.Legacy.dll               |  Bin [31m6144[m -> [32m0[m bytes
+ .../obj/EJLive.Monitor.csproj.nuget.dgspec.json    |  235 [31m---[m
+ .../obj/EJLive.Monitor.csproj.nuget.g.props        |   16 [31m-[m
+ .../obj/EJLive.Monitor.csproj.nuget.g.targets      |    2 [31m-[m
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../net8.0-windows/EJLive.M.A7766C36.Up2Date       |    0
+ ...nitor.GeneratedMSBuildEditorConfig.editorconfig |   24 [31m-[m
+ .../EJLive.Monitor.GlobalUsings.g.cs               |   10 [31m-[m
+ .../net8.0-windows/EJLive.Monitor.Legacy.dll       |  Bin [31m26624[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Monitor.Legacy.pdb       |  Bin [31m17708[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Monitor.assets.cache     |  Bin [31m3034[m -> [32m0[m bytes
+ .../EJLive.Monitor.csproj.AssemblyReference.cache  |  Bin [31m4061[m -> [32m0[m bytes
+ .../EJLive.Monitor.csproj.CoreCompileInputs.cache  |    1 [31m-[m
+ .../EJLive.Monitor.csproj.FileListAbsolute.txt     |   18 [31m-[m
+ .../net8.0-windows/ref/EJLive.Monitor.Legacy.dll   |  Bin [31m6144[m -> [32m0[m bytes
+ .../refint/EJLive.Monitor.Legacy.dll               |  Bin [31m6144[m -> [32m0[m bytes
+ src/EJLive.Monitor/obj/project.assets.json         |  256 [31m---[m
+ src/EJLive.Monitor/obj/project.nuget.cache         |   12 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.dll       |  Bin [31m515584[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Core.dll.config    |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.pdb       |  Bin [31m142836[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Monitoring.deps.json     |  106 [31m--[m
+ .../bin/Debug/net8.0-windows/EJLive.Monitoring.dll |  Bin [31m48640[m -> [32m0[m bytes
+ .../net8.0-windows/EJLive.Monitoring.dll.config    |   18 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Monitoring.exe |  Bin [31m152064[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Monitoring.pdb |  Bin [31m25120[m -> [32m0[m bytes
+ .../EJLive.Monitoring.runtimeconfig.json           |   18 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Shared.dll     |  Bin [31m20992[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Shared.dll.config  |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Shared.pdb     |  Bin [31m16708[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/System.Data.SQLite.dll    |  Bin [31m427696[m -> [32m0[m bytes
+ .../runtimes/linux-x64/native/SQLite.Interop.dll   |  Bin [31m2982112[m -> [32m0[m bytes
+ .../runtimes/osx-x64/native/SQLite.Interop.dll     |  Bin [31m2150084[m -> [32m0[m bytes
+ .../runtimes/win-x64/native/SQLite.Interop.dll     |  Bin [31m1829040[m -> [32m0[m bytes
+ .../runtimes/win-x86/native/SQLite.Interop.dll     |  Bin [31m1447600[m -> [32m0[m bytes
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../Debug/net8.0-windows/EJLive.M.275D0B00.Up2Date |    0
+ ...Forms.GeneratedMSBuildEditorConfig.editorconfig |   24 [31m-[m
+ .../EJLive.Monitoring.WinForms.GlobalUsings.g.cs   |   10 [31m-[m
+ .../EJLive.Monitoring.WinForms.assets.cache        |  Bin [31m3034[m -> [32m0[m bytes
+ ...itoring.WinForms.csproj.AssemblyReference.cache |  Bin [31m3977[m -> [32m0[m bytes
+ ...itoring.WinForms.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ ...Monitoring.WinForms.csproj.FileListAbsolute.txt |   53 [31m-[m
+ ...Live.Monitoring.WinForms.genruntimeconfig.cache |    1 [31m-[m
+ .../EJLive.Monitoring.WinForms.sourcelink.json     |    1 [31m-[m
+ .../obj/Debug/net8.0-windows/EJLive.Monitoring.dll |  Bin [31m48640[m -> [32m0[m bytes
+ .../obj/Debug/net8.0-windows/EJLive.Monitoring.pdb |  Bin [31m25120[m -> [32m0[m bytes
+ .../obj/Debug/net8.0-windows/apphost.exe           |  Bin [31m152064[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/ref/EJLive.Monitoring.dll |  Bin [31m11264[m -> [32m0[m bytes
+ .../net8.0-windows/refint/EJLive.Monitoring.dll    |  Bin [31m11264[m -> [32m0[m bytes
+ ...ve.Monitoring.WinForms.csproj.nuget.dgspec.json |  235 [31m---[m
+ ...EJLive.Monitoring.WinForms.csproj.nuget.g.props |   16 [31m-[m
+ ...Live.Monitoring.WinForms.csproj.nuget.g.targets |    2 [31m-[m
+ .../.NETCoreApp,Version=v8.0.AssemblyAttributes.cs |    4 [31m-[m
+ .../net8.0-windows/EJLive.M.275D0B00.Up2Date       |    0
+ ...Forms.GeneratedMSBuildEditorConfig.editorconfig |   24 [31m-[m
+ .../EJLive.Monitoring.WinForms.GlobalUsings.g.cs   |   10 [31m-[m
+ .../EJLive.Monitoring.WinForms.assets.cache        |  Bin [31m3034[m -> [32m0[m bytes
+ ...itoring.WinForms.csproj.AssemblyReference.cache |  Bin [31m4061[m -> [32m0[m bytes
+ ...itoring.WinForms.csproj.CoreCompileInputs.cache |    1 [31m-[m
+ ...Monitoring.WinForms.csproj.FileListAbsolute.txt |   26 [31m-[m
+ ...Live.Monitoring.WinForms.genruntimeconfig.cache |    1 [31m-[m
+ .../Release/net8.0-windows/EJLive.Monitoring.dll   |  Bin [31m46592[m -> [32m0[m bytes
+ .../Release/net8.0-windows/EJLive.Monitoring.pdb   |  Bin [31m22316[m -> [32m0[m bytes
+ .../obj/Release/net8.0-windows/apphost.exe         |  Bin [31m152064[m -> [32m0[m bytes
+ .../net8.0-windows/ref/EJLive.Monitoring.dll       |  Bin [31m11264[m -> [32m0[m bytes
+ .../net8.0-windows/refint/EJLive.Monitoring.dll    |  Bin [31m11264[m -> [32m0[m bytes
+ .../obj/project.assets.json                        |  256 [31m---[m
+ .../obj/project.nuget.cache                        |   12 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.dll       |  Bin [31m515584[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Core.dll.config    |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Core.pdb       |  Bin [31m142836[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Server.deps.json   |  106 [31m--[m
+ .../bin/Debug/net8.0-windows/EJLive.Server.dll     |  Bin [31m125440[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Server.dll.config  |   26 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Server.exe     |  Bin [31m152064[m -> [32m0[m bytes
+ .../bin/Debug/net8.0-windows/EJLive.Server.pdb     |  Bin [31m47176[m -> [32m0[m bytes
+ .../EJLive.Server.runtimeconfig.json               |   18 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Shared.dll     |  Bin [31m20992[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/EJLive.Shared.dll.config  |   27 [31m-[m
+ .../bin/Debug/net8.0-windows/EJLive.Shared.pdb     |  Bin [31m16708[m -> [32m0[m bytes
+ .../Debug/net8.0-windows/System.Data.SQLite.dll    |  Bin [31m427696[m -> [32m0[m bytes
+ .../runtimes/linux-x64/native/SQLite.Interop.dll   |  Bin [31m2982112[m -> [32m0[m bytes
+ .../runtimes/osx-x64/native/SQLite.Interop.dll     |  Bin [31m2150084[m -> [32m0[m bytes
+ .../runtimes/win-x64/native/SQLite.Interop.dll     |  Bin [31m1829040[m -> [32m0[m bytes
+ .../runtimes/win-x86/native/SQLite.Interop.dll     |  Bin [31m1447600[m -> [32m0[m bytes
+ 533 files changed, 11359 deletions(-)
